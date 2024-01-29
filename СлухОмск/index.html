@@ -1,0 +1,1399 @@
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Главная</title>
+          <!--Animate-->
+          <link rel="stylesheet" href="assets/css/animate.min.css"/>
+          <!--CSS-->
+          <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+          <!--Bootstrap CSS-->
+          <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+          <!--Owl Slider CSS-->
+          <link href="assets/owl-carousel/css/owl.carousel.min.css">
+          <link href="assets/owl-carousel/css/owl.theme.default.min.css">
+      </head>
+      <body>
+        <div class="preloader">
+          <div class = "centered">
+            <div class = "blob-1"></div>
+            <div class = "blob-2"></div>
+          </div>
+        </div>
+        <header>
+          <div class="top-contact">
+            <div class="container">
+              <div class="row">
+                <div class="item d-flex align-items-center">
+                  <div class="icon eye">
+                    <a href="#" class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11" fill="none">
+                        <g clip-path="url(#clip0_142_4)">
+                          <path d="M9 0C5.56091 0 2.44216 1.92896 0.140841 5.06211C-0.0469469 5.31881 -0.0469469 5.67742 0.140841 5.93411C2.44216 9.07104 5.56091 11 9 11C12.4391 11 15.5578 9.07104 17.8592 5.93789C18.0469 5.68119 18.0469 5.32258 17.8592 5.06589C15.5578 1.92896 12.4391 0 9 0ZM9.2467 9.37303C6.96379 9.52025 5.07855 7.59128 5.22215 5.24708C5.33998 3.31434 6.86806 1.74777 8.7533 1.62697C11.0362 1.47975 12.9214 3.40872 12.7778 5.75292C12.6563 7.68188 11.1283 9.24846 9.2467 9.37303ZM9.13256 7.58373C7.90273 7.66301 6.88647 6.62491 6.96747 5.3641C7.03007 4.32224 7.85486 3.48044 8.87113 3.41249C10.101 3.33322 11.1172 4.37131 11.0362 5.63212C10.9699 6.67776 10.1451 7.51956 9.13256 7.58373Z" fill="url(#paint0_linear_142_4)"/>
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_142_4" x1="9" y1="0" x2="9" y2="11" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <clipPath id="clip0_142_4">
+                            <rect width="18" height="11"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-0 d-lg-block d-none">Версия для слабовидящих</p>
+                    </a>
+                  </div>
+                  <div class="icon search">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal" class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_144_20)">
+                          <path d="M0 6.54545C0 2.9305 2.9305 0 6.54545 0C10.1604 0 13.0909 2.9305 13.0909 6.54545C13.0909 10.1604 10.1604 13.0909 6.54545 13.0909C2.9305 13.0909 0 10.1604 0 6.54545Z" fill="url(#paint0_linear_144_20)"/>
+                          <path d="M12.6521 11.8108C12.4197 11.5784 12.043 11.5784 11.8106 11.8108C11.5783 12.0431 11.5783 12.4199 11.8106 12.6522L14.9842 15.8258C15.2166 16.0582 15.5933 16.0582 15.8257 15.8258C16.0581 15.5934 16.0581 15.2167 15.8257 14.9843L12.6521 11.8108Z" fill="url(#paint1_linear_144_20)"/>
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_144_20" x1="6.54545" y1="0" x2="6.54545" y2="13.0909" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <linearGradient id="paint1_linear_144_20" x1="13.8182" y1="11.6365" x2="13.8182" y2="16.0001" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <clipPath id="clip0_144_20">
+                            <rect width="16" height="16"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-0 d-lg-block d-none">Поиск по сайту</p>
+                    </a>
+                    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-body p-0">
+                            <form role="search">
+                              <div class="title d-flex align-items-center justify-content-between mb-5">
+                                <h4 class="mb-0">Поиск</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <input class="form-control me-2" type="search" placeholder="Поиск..." aria-label="Поиск">
+                              <div class="btn-block">
+                                <button class="btn mt-0 btn-light w-100">Искать</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon ms-auto">
+                    <a href="mailto:healthyoung@mail.ru" class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_130_205)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88556 0.511172C2.06055 0.336452 2.27066 0.200915 2.50199 0.113542C2.73331 0.0261698 2.98058 -0.011043 3.22737 0.00436993C3.47416 0.0197829 3.71487 0.0874697 3.93352 0.202945C4.15218 0.318419 4.3438 0.479046 4.49569 0.67418L6.29078 2.9803C6.61979 3.40332 6.7358 3.95434 6.60579 4.47437L6.05876 6.66447C6.03048 6.77791 6.03201 6.89673 6.06321 7.0094C6.0944 7.12207 6.15418 7.22476 6.23677 7.30751L8.69389 9.76463C8.77674 9.84738 8.87959 9.90727 8.99246 9.93846C9.10532 9.96967 9.22434 9.9711 9.33792 9.94263L11.5271 9.39561C11.7837 9.33144 12.0515 9.32646 12.3104 9.38103C12.5692 9.4356 12.8122 9.5483 13.0211 9.71062L15.3272 11.5047C16.1563 12.1497 16.2323 13.3748 15.4903 14.1158L14.4562 15.1498C13.7162 15.8899 12.6101 16.2149 11.5791 15.8519C8.94009 14.9234 6.54406 13.4127 4.56869 11.4317C2.58789 9.45662 1.07713 7.06095 0.148478 4.42237C-0.213539 3.39232 0.111476 2.28526 0.851512 1.54523L1.88556 0.511172Z" fill="url(#paint0_linear_130_205)"/>
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_130_205" x1="8.00066" y1="0.000976563" x2="8.00066" y2="16.001" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <clipPath id="clip0_130_205">
+                            <rect width="16" height="16" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-0 d-lg-block d-none">+123 456 7899 90</p>
+                    </a>
+                  </div>
+                  <div class="icon mail">
+                    <a href="mailto:zvukomsk@yandex.ru" class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
+                        <g clip-path="url(#clip0_135_12)">
+                          <path d="M16 0.551161C15.7679 0.219309 15.3776 0 14.9371 0H1.04641C0.615187 0 0.233879 0.211521 0 0.531817L8.01724 7.05882L16 0.551161Z" fill="url(#paint0_linear_135_12)"/>
+                          <path d="M0 1.88232V10.9995C0 11.6792 0.562606 12.2353 1.25023 12.2353H14.7498C15.4374 12.2353 16 11.6792 16 10.9995V1.9152L8.02475 8.4966L0 1.88232Z" fill="url(#paint1_linear_135_12)"/>
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_135_12" x1="8" y1="0" x2="8" y2="7.05882" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <linearGradient id="paint1_linear_135_12" x1="8" y1="1.88232" x2="8" y2="12.2353" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <clipPath id="clip0_135_12">
+                            <rect width="16" height="12.2353" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-0 d-lg-block d-none">zvukomsk@yandex.ru</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="d-flex align-items-center" href="#">
+                  <img src="assets/img/logo.png" alt="logo">
+                  <div class="name">
+                    <h3>Лаборатория</h3>
+                    <h6 class="mb-0">слуха и протезирования</h6>
+                  </div>
+                </a>
+              </div>
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24">
+                  <path d="M20 5.25H2a.75.75 0 0 1 0-1.5h18a.75.75 0 0 1 0 1.5zm2 5H2a.75.75 0 0 1 0-1.5h20a.75.75 0 0 1 0 1.5zm-2 5H2a.75.75 0 0 1 0-1.5h18a.75.75 0 0 1 0 1.5zm2 5H2a.75.75 0 0 1 0-1.5h20a.75.75 0 0 1 0 1.5z" data-name="Layer 2"/>
+                </svg>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasNavbarLabel" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close ms-auto shadow-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link p-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Слуховые аппараты
+                    </a>
+                    <ul class="dropdown-menu border-0 p-0">
+                      <li><a class="dropdown-item p-0" href="#">Action</a></li>
+                      <li><a class="dropdown-item p-0" href="#">Another action</a></li>
+                      <li><a class="dropdown-item p-0 mb-0" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="#">Акции</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="#">О компании</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="#">Тест слуха</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 me-lg-3 me-0" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-block">
+                <button class="btn d-flex align-items-center">
+                  <div class="icon d-xl-block d-lg-block d-md-none d-sm-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <g clip-path="url(#clip0_149_9)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88556 0.511172C2.06055 0.336452 2.27066 0.200915 2.50199 0.113542C2.73331 0.0261698 2.98058 -0.011043 3.22737 0.00436993C3.47416 0.0197829 3.71487 0.0874697 3.93352 0.202945C4.15218 0.318419 4.3438 0.479046 4.49569 0.67418L6.29078 2.9803C6.61979 3.40332 6.7358 3.95434 6.60579 4.47437L6.05876 6.66447C6.03048 6.77791 6.03201 6.89673 6.06321 7.0094C6.0944 7.12207 6.15418 7.22476 6.23677 7.30751L8.69389 9.76463C8.77674 9.84738 8.87959 9.90727 8.99246 9.93846C9.10532 9.96967 9.22434 9.9711 9.33792 9.94263L11.5271 9.39561C11.7837 9.33144 12.0515 9.32646 12.3104 9.38103C12.5692 9.4356 12.8122 9.5483 13.0211 9.71062L15.3272 11.5047C16.1563 12.1497 16.2323 13.3748 15.4903 14.1158L14.4562 15.1498C13.7162 15.8899 12.6101 16.2149 11.5791 15.8519C8.94009 14.9234 6.54406 13.4127 4.56869 11.4317C2.58789 9.45662 1.07713 7.06095 0.148478 4.42237C-0.213539 3.39232 0.111476 2.28526 0.851512 1.54523L1.88556 0.511172Z"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_149_9">
+                          <rect width="16" height="16"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <span class="d-md-block d-none">Заказать звонок</span>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/slider.jpg" class="d-block w-100 h-100" alt="slider">
+                <div class="linear-slider z-1 top-0 left-0 w-100 h-100"></div>
+                <div class="carousel-caption h-100 bottom-0 d-flex align-items-start col-md-6 justify-content-center flex-column z-2">
+                  <h1 class="text-start">Инновации для ясного и комфортного слуха</h1>
+                  <p class="text-start">Погружайтесь в невидимые миры звука с нами, где каждый момент становится ясным и освежающим. Откройте дверь к невероятному звуковому опыту с СлухОмск</p>
+                  <div class="btn-block">
+                    <button class="btn w-md-50 w-sm-100 btn-light">Записаться</button>
+                    <button class="btn w-md-50 w-sm-100 btn-dark">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/slider.jpg" class="d-block w-100 h-100" alt="slider">
+                <div class="linear-slider z-1 top-0 left-0 w-100 h-100"></div>
+                <div class="carousel-caption h-100 bottom-0 d-flex align-items-start col-md-6 justify-content-center flex-column z-2">
+                  <h1 class="text-start">Инновации для ясного и комфортного слуха</h1>
+                  <p class="text-start">Погружайтесь в невидимые миры звука с нами, где каждый момент становится ясным и освежающим. Откройте дверь к невероятному звуковому опыту с СлухОмск</p>
+                  <div class="btn-block mx-xl-0 mx-md-0 mx-auto w-sm-100">
+                    <button class="btn w-md-50 w-sm-100 btn-light">Записаться</button>
+                    <button class="btn w-md-50 w-sm-100 btn-dark">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/slider.jpg" class="d-block w-100 h-100" alt="slider">
+                <div class="linear-slider z-1 top-0 left-0 w-100 h-100"></div>
+                <div class="carousel-caption h-100 bottom-0 d-flex align-items-start col-md-6 justify-content-center flex-column z-2">
+                  <h1 class="text-start">Инновации для ясного и комфортного слуха</h1>
+                  <p class="text-start">Погружайтесь в невидимые миры звука с нами, где каждый момент становится ясным и освежающим. Откройте дверь к невероятному звуковому опыту с СлухОмск</p>
+                  <div class="btn-block mx-xl-0 mx-md-0 mx-auto w-sm-100">
+                    <button class="btn w-md-50 w-sm-100 btn-light">Записаться</button>
+                    <button class="btn w-md-50 w-sm-100 btn-dark">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="branch">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg col-md-4 col-sm-6 col-12">
+                  <div class="card border-0">
+                    <div class="card-header border-0">
+                      <div class="title">
+                        <h5 class="mb-0">Перелёта, 7 к1</h5>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_242_1370)">
+                              <rect width="16" height="16" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88556 0.511172C2.06055 0.336452 2.27066 0.200915 2.50199 0.113542C2.73331 0.0261698 2.98058 -0.011043 3.22737 0.00436993C3.47416 0.0197829 3.71487 0.0874697 3.93352 0.202945C4.15218 0.318419 4.3438 0.479046 4.49569 0.67418L6.29078 2.9803C6.61979 3.40332 6.7358 3.95434 6.60579 4.47437L6.05876 6.66447C6.03048 6.77791 6.03201 6.89673 6.06321 7.0094C6.0944 7.12207 6.15418 7.22476 6.23677 7.30751L8.69389 9.76463C8.77674 9.84738 8.87959 9.90727 8.99246 9.93846C9.10532 9.96967 9.22434 9.9711 9.33792 9.94263L11.5271 9.39561C11.7837 9.33144 12.0515 9.32646 12.3104 9.38103C12.5692 9.4356 12.8122 9.5483 13.0211 9.71062L15.3272 11.5047C16.1563 12.1497 16.2323 13.3748 15.4903 14.1158L14.4562 15.1498C13.7162 15.8899 12.6101 16.2149 11.5791 15.8519C8.94009 14.9234 6.54406 13.4127 4.56869 11.4317C2.58789 9.45662 1.07713 7.06095 0.148478 4.42237C-0.213539 3.39232 0.111476 2.28526 0.851512 1.54523L1.88556 0.511172Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1370">
+                                <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">(3812) 501-500</a></p>
+                      </div>
+                      <div class="item mb-0 d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <g clip-path="url(#clip0_242_1432)">
+                              <path d="M16 0.540561C15.7679 0.215091 15.3776 0 14.9371 0H1.04641C0.615187 0 0.233879 0.207453 0 0.52159L8.01724 6.92308L16 0.540561Z"/>
+                              <path d="M0 1.84619V10.788C0 11.4546 0.562606 12 1.25023 12H14.7498C15.4374 12 16 11.4546 16 10.788V1.87843L8.02475 8.33327L0 1.84619Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1432">
+                                <rect width="16" height="12" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">zvukomsk@yandex.ru</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-12">
+                  <div class="card border-0">
+                    <div class="card-header border-0">
+                      <div class="title">
+                        <h5 class="mb-0">Красный Путь, 131</h5>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_242_1370)">
+                              <rect width="16" height="16" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88556 0.511172C2.06055 0.336452 2.27066 0.200915 2.50199 0.113542C2.73331 0.0261698 2.98058 -0.011043 3.22737 0.00436993C3.47416 0.0197829 3.71487 0.0874697 3.93352 0.202945C4.15218 0.318419 4.3438 0.479046 4.49569 0.67418L6.29078 2.9803C6.61979 3.40332 6.7358 3.95434 6.60579 4.47437L6.05876 6.66447C6.03048 6.77791 6.03201 6.89673 6.06321 7.0094C6.0944 7.12207 6.15418 7.22476 6.23677 7.30751L8.69389 9.76463C8.77674 9.84738 8.87959 9.90727 8.99246 9.93846C9.10532 9.96967 9.22434 9.9711 9.33792 9.94263L11.5271 9.39561C11.7837 9.33144 12.0515 9.32646 12.3104 9.38103C12.5692 9.4356 12.8122 9.5483 13.0211 9.71062L15.3272 11.5047C16.1563 12.1497 16.2323 13.3748 15.4903 14.1158L14.4562 15.1498C13.7162 15.8899 12.6101 16.2149 11.5791 15.8519C8.94009 14.9234 6.54406 13.4127 4.56869 11.4317C2.58789 9.45662 1.07713 7.06095 0.148478 4.42237C-0.213539 3.39232 0.111476 2.28526 0.851512 1.54523L1.88556 0.511172Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1370">
+                                <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">(3812) 501-500</a></p>
+                      </div>
+                      <div class="item mb-0 d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <g clip-path="url(#clip0_242_1432)">
+                              <path d="M16 0.540561C15.7679 0.215091 15.3776 0 14.9371 0H1.04641C0.615187 0 0.233879 0.207453 0 0.52159L8.01724 6.92308L16 0.540561Z"/>
+                              <path d="M0 1.84619V10.788C0 11.4546 0.562606 12 1.25023 12H14.7498C15.4374 12 16 11.4546 16 10.788V1.87843L8.02475 8.33327L0 1.84619Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1432">
+                                <rect width="16" height="12" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">zvukomsk@yandex.ru</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-12">
+                  <div class="card border-0">
+                    <div class="card-header border-0">
+                      <div class="title">
+                        <h5 class="mb-0">Б. Хмельницкого, 216</h5>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_242_1370)">
+                              <rect width="16" height="16" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88556 0.511172C2.06055 0.336452 2.27066 0.200915 2.50199 0.113542C2.73331 0.0261698 2.98058 -0.011043 3.22737 0.00436993C3.47416 0.0197829 3.71487 0.0874697 3.93352 0.202945C4.15218 0.318419 4.3438 0.479046 4.49569 0.67418L6.29078 2.9803C6.61979 3.40332 6.7358 3.95434 6.60579 4.47437L6.05876 6.66447C6.03048 6.77791 6.03201 6.89673 6.06321 7.0094C6.0944 7.12207 6.15418 7.22476 6.23677 7.30751L8.69389 9.76463C8.77674 9.84738 8.87959 9.90727 8.99246 9.93846C9.10532 9.96967 9.22434 9.9711 9.33792 9.94263L11.5271 9.39561C11.7837 9.33144 12.0515 9.32646 12.3104 9.38103C12.5692 9.4356 12.8122 9.5483 13.0211 9.71062L15.3272 11.5047C16.1563 12.1497 16.2323 13.3748 15.4903 14.1158L14.4562 15.1498C13.7162 15.8899 12.6101 16.2149 11.5791 15.8519C8.94009 14.9234 6.54406 13.4127 4.56869 11.4317C2.58789 9.45662 1.07713 7.06095 0.148478 4.42237C-0.213539 3.39232 0.111476 2.28526 0.851512 1.54523L1.88556 0.511172Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1370">
+                                <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">(3812) 501-500</a></p>
+                      </div>
+                      <div class="item mb-0 d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <g clip-path="url(#clip0_242_1432)">
+                              <path d="M16 0.540561C15.7679 0.215091 15.3776 0 14.9371 0H1.04641C0.615187 0 0.233879 0.207453 0 0.52159L8.01724 6.92308L16 0.540561Z"/>
+                              <path d="M0 1.84619V10.788C0 11.4546 0.562606 12 1.25023 12H14.7498C15.4374 12 16 11.4546 16 10.788V1.87843L8.02475 8.33327L0 1.84619Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1432">
+                                <rect width="16" height="12" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">zvukomsk@yandex.ru</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-12">
+                  <div class="card border-0">
+                    <div class="card-header border-0">
+                      <div class="title">
+                        <h5 class="mb-0">10 лет Октября 105</h5>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_242_1370)">
+                              <rect width="16" height="16" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88556 0.511172C2.06055 0.336452 2.27066 0.200915 2.50199 0.113542C2.73331 0.0261698 2.98058 -0.011043 3.22737 0.00436993C3.47416 0.0197829 3.71487 0.0874697 3.93352 0.202945C4.15218 0.318419 4.3438 0.479046 4.49569 0.67418L6.29078 2.9803C6.61979 3.40332 6.7358 3.95434 6.60579 4.47437L6.05876 6.66447C6.03048 6.77791 6.03201 6.89673 6.06321 7.0094C6.0944 7.12207 6.15418 7.22476 6.23677 7.30751L8.69389 9.76463C8.77674 9.84738 8.87959 9.90727 8.99246 9.93846C9.10532 9.96967 9.22434 9.9711 9.33792 9.94263L11.5271 9.39561C11.7837 9.33144 12.0515 9.32646 12.3104 9.38103C12.5692 9.4356 12.8122 9.5483 13.0211 9.71062L15.3272 11.5047C16.1563 12.1497 16.2323 13.3748 15.4903 14.1158L14.4562 15.1498C13.7162 15.8899 12.6101 16.2149 11.5791 15.8519C8.94009 14.9234 6.54406 13.4127 4.56869 11.4317C2.58789 9.45662 1.07713 7.06095 0.148478 4.42237C-0.213539 3.39232 0.111476 2.28526 0.851512 1.54523L1.88556 0.511172Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1370">
+                                <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">(3812) 501-500</a></p>
+                      </div>
+                      <div class="item mb-0 d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <g clip-path="url(#clip0_242_1432)">
+                              <path d="M16 0.540561C15.7679 0.215091 15.3776 0 14.9371 0H1.04641C0.615187 0 0.233879 0.207453 0 0.52159L8.01724 6.92308L16 0.540561Z"/>
+                              <path d="M0 1.84619V10.788C0 11.4546 0.562606 12 1.25023 12H14.7498C15.4374 12 16 11.4546 16 10.788V1.87843L8.02475 8.33327L0 1.84619Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1432">
+                                <rect width="16" height="12" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">zvukomsk@yandex.ru</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6 col-12">
+                  <div class="card border-0">
+                    <div class="card-header border-0">
+                      <div class="title">
+                        <h5 class="mb-0">Заозерная 28</h5>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="item d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_242_1370)">
+                              <rect width="16" height="16" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88556 0.511172C2.06055 0.336452 2.27066 0.200915 2.50199 0.113542C2.73331 0.0261698 2.98058 -0.011043 3.22737 0.00436993C3.47416 0.0197829 3.71487 0.0874697 3.93352 0.202945C4.15218 0.318419 4.3438 0.479046 4.49569 0.67418L6.29078 2.9803C6.61979 3.40332 6.7358 3.95434 6.60579 4.47437L6.05876 6.66447C6.03048 6.77791 6.03201 6.89673 6.06321 7.0094C6.0944 7.12207 6.15418 7.22476 6.23677 7.30751L8.69389 9.76463C8.77674 9.84738 8.87959 9.90727 8.99246 9.93846C9.10532 9.96967 9.22434 9.9711 9.33792 9.94263L11.5271 9.39561C11.7837 9.33144 12.0515 9.32646 12.3104 9.38103C12.5692 9.4356 12.8122 9.5483 13.0211 9.71062L15.3272 11.5047C16.1563 12.1497 16.2323 13.3748 15.4903 14.1158L14.4562 15.1498C13.7162 15.8899 12.6101 16.2149 11.5791 15.8519C8.94009 14.9234 6.54406 13.4127 4.56869 11.4317C2.58789 9.45662 1.07713 7.06095 0.148478 4.42237C-0.213539 3.39232 0.111476 2.28526 0.851512 1.54523L1.88556 0.511172Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1370">
+                                <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">(3812) 501-500</a></p>
+                      </div>
+                      <div class="item mb-0 d-flex align-items-center">
+                        <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                            <g clip-path="url(#clip0_242_1432)">
+                              <path d="M16 0.540561C15.7679 0.215091 15.3776 0 14.9371 0H1.04641C0.615187 0 0.233879 0.207453 0 0.52159L8.01724 6.92308L16 0.540561Z"/>
+                              <path d="M0 1.84619V10.788C0 11.4546 0.562606 12 1.25023 12H14.7498C15.4374 12 16 11.4546 16 10.788V1.87843L8.02475 8.33327L0 1.84619Z"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_242_1432">
+                                <rect width="16" height="12" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <p class="mb-0"><a href="#">zvukomsk@yandex.ru</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="container">
+              <div class="row">
+                <div class="title">
+                  <h6 class="text-center">Заботьтесь о своем слухе</h6>
+                  <h2 class="text-center">Что мы предоставляем?</h2>
+                </div>
+                <div class="col-lg-5">
+                  <div class="card hearing-aid border-0">
+                    <div class="card-body p-0">
+                      <div class="title">
+                        <h4>Слуховые аппараты</h4>
+                      </div>
+                      <div class="text">
+                        <p>Выбор, который делает каждый момент ясным и комфортным.</p>
+                      </div>
+                      <div class="link">
+                        <a class="d-flex align-items-center" href="#">
+                          Читать далее
+                          <div class="arrow-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                              <g clip-path="url(#clip0_162_54)">
+                                <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_162_54">
+                                  <rect width="16" height="10" fill="white"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="card technology border-0">
+                    <div class="card-body p-0">
+                      <div class="title">
+                        <h4>Реабилитационная техника</h4>
+                      </div>
+                      <div class="text">
+                        <p>Мы заботимся о вашем комфорте и восстанавливаем радость общения.</p>
+                      </div>
+                      <div class="link">
+                        <a class="d-flex align-items-center" href="#">
+                          Читать далее
+                          <div class="arrow-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                              <g clip-path="url(#clip0_162_54)">
+                                <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_162_54">
+                                  <rect width="16" height="10" fill="white"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="card care-products border-0">
+                    <div class="card-body p-0">
+                      <div class="title">
+                        <h4>Средства ухода</h4>
+                      </div>
+                      <div class="text">
+                        <p>Выбор, который делает каждый момент ясным и комфортным.</p>
+                      </div>
+                      <div class="link">
+                        <a class="d-flex align-items-center" href="#">
+                          Читать далее
+                          <div class="arrow-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                              <g clip-path="url(#clip0_162_54)">
+                                <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_162_54">
+                                  <rect width="16" height="10" fill="white"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="card batteries border-0">
+                    <div class="card-body p-0">
+                      <div class="title">
+                        <h4>Элементы питания</h4>
+                      </div>
+                      <div class="text">
+                        <p>Мы заботимся о вашем комфорте и восстанавливаем общения.</p>
+                      </div>
+                      <div class="link">
+                        <a class="d-flex align-items-center" href="#">
+                          Читать далее
+                          <div class="arrow-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                              <g clip-path="url(#clip0_162_54)">
+                                <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_162_54">
+                                  <rect width="16" height="10" fill="white"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs">
+            <div class="container">
+              <div class="row">
+                <div class="title">
+                  <h6 class="text-center">Идеальные подобранные решения</h6>
+                  <h2 class="text-center">Типы слуховых аппаратов</h2>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-5 col-12">
+                  <div class="list-tabs-btn h-100" id="pills-tab" role="tablist">
+                    <div class="btn-block" role="presentation">
+                      <button class="btn btn-tabs active w-100" id="behind-tab" data-bs-toggle="pill" data-bs-target="#behind" role="tab" aria-controls="behind" aria-selected="true">Заушные</button>
+                    </div>
+                    <div class="btn-block" role="presentation">
+                      <button class="btn btn-tabs w-100" id="intra-tab" data-bs-toggle="pill" data-bs-target="#intra" role="tab" aria-controls="intra" aria-selected="false">Внутриушные</button>
+                    </div>
+                    <div class="btn-block" role="presentation">
+                      <button class="btn btn-tabs w-100" id="intracanal-tab" data-bs-toggle="pill" data-bs-target="#intracanal" role="tab" aria-controls="intracanal" aria-selected="false">Внутриканальные</button>
+                    </div>
+                    <div class="btn-block" role="presentation">
+                      <button class="btn btn-tabs w-100" id="pocket-tab" data-bs-toggle="pill" data-bs-target="#pocket" role="tab" aria-controls="pocket" aria-selected="false">Карманные</button>
+                    </div>
+                    <div class="btn-block" role="presentation">
+                      <button class="btn btn-tabs w-100" id="analog-tab" data-bs-toggle="pill" data-bs-target="#analog" role="tab" aria-controls="analog" aria-selected="false">Аналоговые</button>
+                    </div>
+                    <div class="btn-block" role="presentation">
+                      <button class="btn btn-tabs w-100" id="digital-tab" data-bs-toggle="pill" data-bs-target="#digital" role="tab" aria-controls="digital" aria-selected="false">Цифровые</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-7 col-12">
+                  <div class="content">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="behind" role="tabpanel" aria-labelledby="behind-tab" tabindex="0">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/tab.jpg" alt="type">
+                        <div class="title">
+                          <h4>Заушные</h4>
+                        </div>
+                        <p>
+                          Наиболее часто встречаемый и легко узнаваемый слуховой аппарат - располагаемый за ухом пациента, с небольшой прозрачной трубочкой, заканчивающейся вкладышем и устанавливаемой в слуховой проход пациента.<br><br>
+                          Благодаря последним технологическим разработкам и фантазии дизайнеров, современные заушные аппараты также могут быть миниатюрных размеров, легкими и практически незаметными.<br><br>
+                          Положительные качества: такие аппараты более мощные и имеют больше опций. Они небольших размеров и современного дизайна. Подходят даже для пожилых пациентов с утраченным проворством рук.
+                        </p>
+                        <div class="link">
+                          <a class="d-flex align-items-center" href="#">
+                            Читать далее
+                            <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                <g clip-path="url(#clip0_162_54)">
+                                  <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_162_54">
+                                    <rect width="16" height="10" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="intra" role="tabpanel" aria-labelledby="intra-tab" tabindex="0">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/tab.jpg" alt="type">
+                        <div class="title">
+                          <h4>Внутриушные</h4>
+                        </div>
+                        <p>
+                          Внутриушные слуховые аппараты (ВСА) изготавливаются для каждого пациента индивидуально на основе слепка слухового прохода. Слепок снимает слухопротезист в своем кабинете и отсылает его на производство. Внутриушные аппараты имеют различные размеры: от полностью внутриканальных (CIC) до занимающих практически всю ушную раковину. Внутриушной аппарат вставляется в слуховой проход, но остается все-таки отчасти видимым в наружном ухе. Степень видимости слухового аппарата зависит от его размеров. Например, слуховой аппарат типа CIC устанавливается глубоко в слуховой проход и практически невидим. Слуховой аппарат типа Конха, занимает всю ушную раковину и достаточно заметен. Размер внутриушного слухового аппарата будет зависеть от степени вашей потери слуха, а также размеров вашего слухового прохода и ушной раковины. Чем меньше слуховой аппарат, тем меньшую мощность он имеет и меньшими функциями обладает.
+                        </p>
+                        <div class="link">
+                          <a class="d-flex align-items-center" href="#">
+                            Читать далее
+                            <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                <g clip-path="url(#clip0_162_54)">
+                                  <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_162_54">
+                                    <rect width="16" height="10" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="intracanal" role="tabpanel" aria-labelledby="intracanal-tab" tabindex="0">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/tab.jpg" alt="type">
+                        <div class="title">
+                          <h4>Внутриканальные</h4>
+                        </div>
+                        <p>Внутриканальные очень схожи с внутриушными, но отличаются методом размещения и размерами. Такой механизм размещается в полость слухового канала, что увеличивает качество звука.Применяется практически при всех видах нарушения слуха, в том числе при тугоухости крайней степени. Крепится такой аппарат внутри слухового канала, благодаря его работе звук воспроизводится более чистый, с большей отчетливостью. Он очень компактен, практически не заметен для глаз окружающих. Очень мало весит и не доставляет дополнительных неудобств. Это практически самый дорогой вид слуховых аппаратов.</p>
+                        <div class="link">
+                          <a class="d-flex align-items-center" href="#">
+                            Читать далее
+                            <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                <g clip-path="url(#clip0_162_54)">
+                                  <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_162_54">
+                                    <rect width="16" height="10" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pocket" role="tabpanel" aria-labelledby="pocket-tab" tabindex="0">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/tab.jpg" alt="type">
+                        <div class="title">
+                          <h4>Карманные</h4>
+                        </div>
+                        <p>Карманные аппараты – все детали такого аппарата помещены в футляр, который возможно разместить в кармане или повесить на шею. От футляра идет провод с наушником, который человек вставляет в слуховой проход. Преимущество такого аппарата в том, что в случае серьезного нарушения моторики у пациента –с карманным аппаратом проще обращаться, ведь он существенно крупнее заушных и, тем более, внутриушных моделей. Элементы питания у таких аппаратов – пальчиковые батарейки. Они более долговечны, в сравнении с воздушно-цинковыми элементами питания, и доступны. Из недостатков – размеры и невозможность осуществления точной настройки на компьютере такого аппарата.</p>
+                        <div class="link">
+                          <a class="d-flex align-items-center" href="#">
+                            Читать далее
+                            <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                <g clip-path="url(#clip0_162_54)">
+                                  <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_162_54">
+                                    <rect width="16" height="10" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="analog" role="tabpanel" aria-labelledby="analog-tab" tabindex="0">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/tab.jpg" alt="type">
+                        <div class="title">
+                          <h4>Аналоговые</h4>
+                        </div>
+                        <p>Аналоговые аппараты - в таких аппаратах все звуки преобразуются в электрические сигналы и усиливаются. Это одни из самых простых слуховых аппаратов. Такой аппарат не имеет функций подавления окружающих шумов, подавления обратной связи (писка слухового аппарата), направленности микрофонов и других. Весь спектр звуков усиливается одинаково, вне зависимости от характера снижения слуха данного конкретного пациента. Настраивается при помощи триммеров (электромеханические регуляторы) и элементов управления на корпусе аппарата.</p>
+                        <div class="link">
+                          <a class="d-flex align-items-center" href="#">
+                            Читать далее
+                            <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                <g clip-path="url(#clip0_162_54)">
+                                  <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_162_54">
+                                    <rect width="16" height="10" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="digital" role="tabpanel" aria-labelledby="digital-tab" tabindex="0">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/tab.jpg" alt="type">
+                        <div class="title">
+                          <h4>Цифровые</h4>
+                        </div>
+                        <p>Цифровые аппараты – производят цифровую обработку усиливаемого сигнала. Настройка таких аппаратов производится на компьютере, путем программирования необходимых параметров. На данный момент данный тип слуховых аппаратов – наиболее распространен. Это объясняется его широкими возможностями для пациента и специалиста по настройке, такими как: высокое качество передаваемой речи за счет систем шумоподавления, выделения речи, усиления речи, направленности микрофонов, автоматических подстроек в зависимости от акустической ситуации) точность настройки в соответствии с аудиограммой пациента (определение порогов слуха человека) за счет многоканальности цифровых слуховых аппаратов. Канал – частотный диапазон (полоса), внутри которого обрабатываются звуки. Чем большее число этих каналов, тем они уже и тем точнее настройка по форме аудиограммы внутри аппарата. компенсация очень тяжелых потерь слуха</p>
+                        <div class="link">
+                          <a class="d-flex align-items-center" href="#">
+                            Читать далее
+                            <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                <g clip-path="url(#clip0_162_54)">
+                                  <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_162_54">
+                                    <rect width="16" height="10" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="img-items position-relative">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-6">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/about-1.jpg" alt="about">
+                      </div>
+                      <div class="col-6">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/about-2.jpg" alt="about">
+                      </div>
+                      <div class="col-6">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/about-3.jpg" alt="about">
+                      </div>
+                    </div>
+                    <div class="icons h-100">
+                      <div class="icon first position-absolute top-0 end-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                          <g clip-path="url(#clip0_173_201)">
+                            <path d="M27.9197 4.81751C26.4643 3.32887 24.7173 2.16565 22.7269 1.36002C20.6441 0.516986 18.3472 0.0895538 15.9002 0.0895538C11.6783 0.0895538 7.72684 1.85085 4.77378 5.04901C2.81328 7.17328 1.77184 11.1329 2.24099 14.6782C2.41405 15.9832 3.01404 17.2083 3.93719 18.153C4.02892 22.3169 4.49963 26.3713 5.37688 30.5394C5.72229 32.1794 6.63035 33.6642 7.93382 34.7204C9.23723 35.7766 10.8796 36.3583 12.5583 36.3583C14.2881 36.3583 15.9686 35.7454 17.2903 34.6325C18.6116 33.5198 19.4997 31.9696 19.7909 30.2676C19.8658 29.8309 20.0388 29.411 20.2911 29.0537C20.5459 28.6936 20.8829 28.3936 21.2657 28.1861C23.2259 27.1248 24.88 25.5027 26.0493 23.4952C26.8258 22.1621 27.3634 20.6939 27.6469 19.1613C28.0444 19.2228 28.4179 19.2542 28.7658 19.2542C29.6908 19.2542 30.4388 19.0372 30.9998 18.6045C31.726 18.0442 32.1236 17.1459 32.1815 15.9344C32.1818 15.9299 32.1819 15.9254 32.182 15.921C32.278 11.6704 30.7643 7.72715 27.9197 4.81751ZM3.29434 14.5386C2.89701 11.5364 3.70746 8.10783 5.23847 6.14309C5.64529 6.46009 6.34126 6.99696 7.24281 7.6719C6.61221 8.38537 6.04693 9.1859 5.57282 10.0572C4.94499 11.3448 4.77328 12.6103 5.03254 14.0403C5.17422 14.8195 5.54923 15.5265 6.11727 16.0854C6.67788 16.6359 7.38328 16.9991 8.15824 17.1372C8.48232 17.2087 8.80292 16.9507 8.79889 16.6173C8.79889 14.3869 9.60211 12.3655 10.8974 10.9053C11.2782 10.828 11.6693 10.7888 12.0625 10.7888C13.6009 10.7888 15.2363 11.5418 16.5492 12.8548C17.862 14.1677 18.6149 15.803 18.6149 17.3412C18.6149 18.0311 18.4617 18.685 18.1596 19.2847C18.0276 19.5468 18.133 19.8662 18.395 19.9982C18.4717 20.0368 18.5532 20.0552 18.6336 20.0552C18.8279 20.0552 19.0151 19.9482 19.1085 19.7628C19.4861 19.0135 19.6775 18.1987 19.6775 17.3412C19.6775 15.5233 18.8112 13.6142 17.3006 12.1035C15.8338 10.6366 13.9913 9.77732 12.2212 9.72859C13.2949 8.98784 14.5545 8.56098 15.9002 8.56098C19.8135 8.56098 22.9977 12.1698 23.0024 16.6077C22.78 22.6247 19.2955 23.8287 15.6066 25.1032C14.0029 25.6573 12.3448 26.2301 11.0262 27.228C10.774 27.4189 10.449 27.4633 10.1569 27.3467C9.86251 27.2292 9.66388 26.9817 9.61203 26.6674C9.58043 26.4766 9.55026 26.2866 9.52072 26.0952C9.46674 25.7483 9.62364 25.404 9.91982 25.2184C10.7946 24.6718 11.4933 24.111 12.0143 23.539C12.0304 23.5392 12.0461 23.5396 12.0624 23.5396C14.0119 23.5396 15.9406 22.919 17.3539 21.837C17.5869 21.6586 17.6312 21.3252 17.4528 21.0922C17.2744 20.8592 16.9409 20.8149 16.708 20.9933C15.6498 21.8034 14.2508 22.3155 12.7865 22.4441C13.0296 21.9631 13.1524 21.4757 13.1524 20.9831C13.1524 20.7363 13.1219 20.491 13.0617 20.2538C13.0093 20.0465 12.842 19.9016 12.6458 19.8626L7.42372 18.8715C6.44617 18.6859 5.54888 18.2259 4.82889 17.5414C3.99032 16.7441 3.44529 15.6776 3.29434 14.5386ZM31.1198 15.8901C31.0765 16.7727 30.8177 17.4029 30.3507 17.7632C29.8142 18.1769 28.9573 18.2929 27.8001 18.1105C27.8529 17.6169 27.8811 17.1185 27.8811 16.6173C27.8811 13.5595 26.8749 10.5925 25.048 8.26275C23.2344 5.94999 20.7206 4.3915 17.97 3.87432C17.6815 3.82005 17.4038 4.00997 17.3496 4.29828C17.2955 4.58658 17.4853 4.86434 17.7736 4.9186C20.2709 5.38804 22.5574 6.80861 24.2119 8.91835C25.8928 11.062 26.8185 13.7961 26.8185 16.6173C26.8185 18.8718 26.235 21.0652 25.1311 22.9603C24.06 24.7993 22.5484 26.2832 20.7596 27.2518C20.2341 27.5366 19.7721 27.9474 19.4233 28.4404C19.0801 28.9266 18.8451 29.4963 18.7437 30.0881C18.4947 31.5433 17.7355 32.8685 16.6059 33.8197C15.4754 34.7715 14.0379 35.2957 12.5582 35.2957C11.1223 35.2957 9.7175 34.7982 8.60274 33.8948C7.48826 32.9917 6.71188 31.7223 6.41663 30.3205C5.61709 26.5218 5.16097 22.8195 5.02588 19.0395C5.69268 19.4672 6.43725 19.7656 7.22552 19.9153L12.0836 20.8373C12.0873 20.8857 12.0898 20.9342 12.0898 20.983C12.0898 22.3271 10.6035 23.538 9.35602 24.3176C8.69879 24.7293 8.3512 25.4911 8.47056 26.2578C8.50059 26.4524 8.53133 26.6463 8.5635 26.8406C8.67563 27.5206 9.12403 28.0787 9.76291 28.3336C9.99936 28.428 10.2455 28.4744 10.4898 28.4744C10.9074 28.4744 11.3192 28.3387 11.6673 28.0753C12.8511 27.1793 14.3581 26.6588 15.9534 26.1076C19.6402 24.8338 23.8191 23.3902 24.0644 16.6366C24.0647 16.6302 24.0648 16.6237 24.0648 16.6174C24.0648 11.5892 20.4022 7.49849 15.9001 7.49849C11.6083 7.49849 8.07939 11.2167 7.75978 15.9207C7.42684 15.7834 7.12259 15.5836 6.86198 15.3276C6.4512 14.9236 6.18011 14.4128 6.07789 13.8506C5.86148 12.657 6.00351 11.6015 6.52466 10.5296C6.52586 10.5272 6.52742 10.5251 6.52863 10.5227C8.42494 7.08275 11.7485 4.92724 15.4229 4.75574C15.7161 4.74207 15.9425 4.49336 15.9289 4.20031C15.9152 3.90725 15.6672 3.67937 15.3734 3.69439C12.5982 3.82388 10.0086 4.9752 7.98532 6.90048C7.08335 6.22647 6.37958 5.68463 5.95378 5.3534C8.65466 2.63962 12.1651 1.15211 15.9002 1.15211C18.21 1.15211 20.3728 1.55348 22.3283 2.34494C24.182 3.09525 25.8077 4.17707 27.16 5.56031C29.8015 8.26226 31.2077 11.9304 31.1198 15.8901Z"/>
+                            <path d="M14.6446 15.9189C14.9377 15.9189 15.1754 15.6813 15.1754 15.3881C15.1754 15.0949 14.9377 14.8573 14.6446 14.8573C14.3514 14.8573 14.1137 15.0949 14.1137 15.3881C14.1137 15.6813 14.3514 15.9189 14.6446 15.9189Z"/>
+                            <path d="M12.6203 14.0551C12.9135 14.0551 13.1511 13.8175 13.1511 13.5243C13.1511 13.2311 12.9135 12.9935 12.6203 12.9935C12.3271 12.9935 12.0895 13.2311 12.0895 13.5243C12.0895 13.8175 12.3271 14.0551 12.6203 14.0551Z"/>
+                            <path d="M11.7161 16.5919C12.0093 16.5919 12.247 16.3542 12.247 16.061C12.247 15.7679 12.0093 15.5302 11.7161 15.5302C11.423 15.5302 11.1853 15.7679 11.1853 16.061C11.1853 16.3542 11.423 16.5919 11.7161 16.5919Z"/>
+                            <path d="M24.7834 32.0352C24.4661 32.0352 24.1515 31.9492 23.8731 31.781C23.4287 31.5124 23.1272 31.0643 23.046 30.5515L23.0421 30.5265C22.9076 29.6777 23.3991 28.8623 24.2108 28.5877C25.8216 28.043 27.1084 26.7561 27.6532 25.1453C27.9277 24.3337 28.743 23.8421 29.592 23.9766L29.6169 23.9805C30.1297 24.0617 30.5779 24.3632 30.8465 24.8076C31.1155 25.2529 31.1741 25.791 31.0072 26.284C30.111 28.9305 27.9961 31.0455 25.3495 31.9417C25.1647 32.0043 24.9736 32.0352 24.7834 32.0352ZM24.0955 30.3853C24.1281 30.5911 24.2443 30.7638 24.4227 30.8717C24.5993 30.9784 24.813 31.0015 25.0086 30.9353C27.3438 30.1446 29.21 28.2785 30.0007 25.9434C30.067 25.7476 30.0437 25.534 29.937 25.3573C29.8292 25.1789 29.6565 25.0627 29.4506 25.0301L29.4258 25.0262C29.0898 24.973 28.7678 25.1664 28.6597 25.4858C28.0095 27.4083 26.4736 28.9442 24.5512 29.5943C24.2316 29.7024 24.0383 30.0246 24.0915 30.3604L24.0955 30.3853Z"/>
+                            <path d="M26.9314 36.3575C26.6849 36.3575 26.4383 36.3058 26.2093 36.2025C25.76 36.0001 25.4145 35.6159 25.2603 35.148C25.2581 35.1415 25.2559 35.135 25.2539 35.1286C25.2527 35.1252 25.2515 35.1218 25.2504 35.1183C24.969 34.2519 25.3902 33.3237 26.23 32.9594C27.2036 32.5364 28.1104 31.9779 28.925 31.2995C29.1505 31.1117 29.4855 31.1423 29.6732 31.3678C29.861 31.5932 29.8304 31.9282 29.6049 32.1159C28.7126 32.8589 27.7195 33.4707 26.6531 33.934C26.3196 34.0787 26.1512 34.4441 26.2596 34.7856C26.2616 34.7915 26.2635 34.7975 26.2654 34.8034C26.2666 34.8067 26.2676 34.8099 26.2687 34.8132C26.3303 35.0026 26.4643 35.152 26.6459 35.2338C26.8262 35.3151 27.0252 35.3166 27.2062 35.2382C30.3994 33.8545 32.92 31.334 34.3035 28.1409C34.3821 27.9598 34.3805 27.7609 34.2992 27.5805C34.2173 27.399 34.0679 27.2649 33.8786 27.2033C33.8753 27.2022 33.8721 27.2012 33.8688 27.2C33.8626 27.1981 33.8567 27.1961 33.8511 27.1942C33.5096 27.0858 33.1441 27.2542 32.9996 27.5875C32.5843 28.5425 32.0496 29.4402 31.4101 30.256C31.2291 30.487 30.8951 30.5274 30.6643 30.3464C30.4334 30.1654 30.3928 29.8314 30.5739 29.6005C31.1577 28.8557 31.6459 28.036 32.025 27.1641C32.3892 26.3247 33.3174 25.9037 34.1838 26.1849C34.1872 26.1861 34.1907 26.1872 34.1942 26.1884C34.201 26.1906 34.2073 26.1927 34.2133 26.1947C34.6812 26.3489 35.0655 26.6945 35.268 27.1438C35.4708 27.5938 35.4746 28.1112 35.2785 28.5634C33.7872 32.0049 31.0705 34.7217 27.6288 36.213C27.4068 36.3094 27.1691 36.3575 26.9314 36.3575Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_173_201">
+                              <rect width="36.2687" height="36.2687" transform="translate(0.641769 0.0895538)"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="icon second position-absolute m-auto start-0 end-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="66" viewBox="0 0 43 66" fill="none">
+                          <g clip-path="url(#clip0_171_137)">
+                            <path d="M6.90987 45.1933C7.95785 47.3661 11.094 47.6036 12.4828 45.6077L14.2662 43.0456C26.9965 39.5591 29.2669 30.0758 25.5594 17.689C25.4304 17.259 25.7423 16.546 26.7512 17.1536C26.7706 17.1652 26.8023 17.1879 26.8462 17.2289C33.5717 23.596 31.8298 32.6617 21.3651 45.7599C21.0377 46.1694 21.105 46.7533 21.5175 47.0847C21.9308 47.4174 22.5418 47.3777 22.9058 46.9991C31.0624 38.5051 38.2439 27.6503 34.3426 16.7211C32.4534 11.4278 27.2596 8.63947 21.3998 8.63947C20.8433 8.64179 20.3947 9.07505 20.3957 9.60734C20.3982 10.1391 20.8486 10.5688 21.4031 10.5688C23.3555 10.625 24.9563 10.821 27.0129 11.6713C33.2564 14.2515 34.4422 21.9726 32.6974 28.2639C33.3388 23.4214 31.8516 19.2549 28.2615 15.8566C27.4464 15.086 26.0123 14.6597 24.8405 15.2874C23.7941 15.8476 23.2828 17.0811 23.6234 18.2205C27.8969 32.4987 22.9139 38.7963 13.372 41.2818C12.7384 41.4469 12.7341 41.8959 10.8069 44.5377C10.5202 44.9504 9.99296 45.1366 9.49509 45.0022C8.79096 44.8121 8.43149 44.0686 8.73657 43.4309C9.93129 40.9337 11.95 37.7043 11.0945 30.7928L16.3648 34.337C17.7168 35.261 19.5791 35.0424 20.6033 33.839C21.703 32.5472 21.4825 30.3355 19.9353 29.2939L17.821 27.8876C14.7509 25.7641 12.9635 22.371 13.0402 18.8105C13.1067 15.7346 13.9934 13.0657 16.9828 11.4949C17.4702 11.2388 17.649 10.6521 17.381 10.1855C17.1134 9.71823 16.5014 9.54699 16.014 9.8036C13.5933 11.076 11.8972 13.2764 11.3592 15.8419C10.1411 21.6535 12.4527 26.5589 16.6497 29.4572C16.8237 29.5748 16.0474 29.0559 18.7783 30.8727C19.3496 31.273 19.4143 32.1828 19.0421 32.6205C18.6926 33.0305 18.0168 33.0965 17.5286 32.7626L11.8853 28.9682C10.5977 28.0877 8.83081 29.1087 9.0403 30.612C10.4459 40.6923 5.36914 42.0021 6.90987 45.1933Z"/>
+                            <path d="M23.7583 54.3899C23.7448 54.3941 22.8595 54.3258 22.6714 55.1164L19.2436 59.5008C15.9569 63.705 11.0703 63.4332 11.053 63.4374C5.71758 63.4374 1.53971 59.1251 2.26031 53.9261C2.71912 50.6188 2.63411 47.0488 2.00742 43.3161C1.92268 42.8125 1.40638 42.4664 0.85662 42.5442C0.305238 42.6217 -0.0728757 43.0924 0.0118693 43.5965C0.610212 47.1596 0.693068 50.5568 0.258008 53.6943C-0.246954 57.3292 1.23581 60.8267 4.22213 63.0493C6.21472 64.5322 8.51282 65.2836 11.053 65.2836H11.0619C14.9097 65.2806 18.5829 63.5208 20.8856 60.5746L24.5793 55.8501C25.0559 55.2406 24.579 54.3899 23.7583 54.3899Z"/>
+                            <path d="M39.8899 9.92356C36.4182 2.57017 28.0926 -1.41019 20.097 0.458342C15.5944 1.51009 12.0723 3.72444 9.25739 6.75635C7.32121 8.84059 4.87229 9.99226 1.97846 10.1796C1.41934 10.2163 0.996674 10.6797 1.03438 11.2157C1.07263 11.7523 1.55851 12.1548 2.11519 12.1215C5.50928 11.9022 8.50294 10.4947 10.7725 8.05035C19.3916 -1.23247 33.2135 0.500756 38.0416 10.7266C46.5782 28.81 27.7137 49.4888 27.0059 50.8856C26.5224 51.5332 27.0151 52.4247 27.8306 52.4247C28.1466 52.4247 28.4583 52.2826 28.6566 52.0175C33.0247 46.1566 32.7927 46.4702 32.8177 46.4335C40.3581 35.2564 45.6165 22.0535 39.8899 9.92356Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_171_137">
+                              <rect width="42.3134" height="65.2836"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="icon third position-absolute ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                          <g clip-path="url(#clip0_173_168)">
+                            <path d="M34.3279 13.2748C35.1789 6.3692 30.0847 0.227952 23.0496 0.196399C16.9785 0.0679201 11.5761 5.46971 11.705 11.5412C11.7049 13.4648 11.7083 16.4615 11.7113 18.7759C11.3401 18.9598 11.0308 19.2669 10.8393 19.6754C10.4642 20.475 10.6051 21.643 11.7168 22.4702L11.7173 22.867C11.7209 25.2765 11.7227 26.486 11.7227 29.4091C12.1124 38.816 25.5158 38.8121 25.9036 29.409C25.9036 28.6019 25.9612 27.8951 26.0677 27.2689C26.152 27.4516 26.2507 27.6298 26.3637 27.8027C27.1298 28.9751 28.4431 29.684 29.7952 29.684C29.9353 29.684 30.0761 29.6764 30.2165 29.6608C31.8741 29.4776 33.2485 28.2421 33.9873 26.2711C34.8906 23.8616 34.8048 19.8428 34.3279 13.2748ZM17.6655 14.3913C17.4663 14.1181 17.2714 13.8506 17.1075 13.5389C19.1374 11.5449 21.6489 11.4856 22.6399 13.3927H21.3548C20.414 13.4302 20.4147 14.7737 21.3548 14.8108H22.9421C22.942 14.8677 22.9407 14.9253 22.9381 14.9833C22.9138 15.5321 22.8247 15.9217 22.6814 16.229H21.5409C20.7138 16.2466 20.5678 17.3884 21.3502 17.6211C21.1223 17.823 20.8865 18.054 20.6608 18.3387C20.4522 18.6019 20.2472 18.9276 20.0099 19.3047C19.4081 20.261 18.6592 21.4513 17.5409 22.0692C16.2581 22.778 14.7007 22.5832 12.7798 21.4741C12.0725 21.0657 11.984 20.5743 12.1233 20.2775C12.2091 20.0719 12.4789 19.9052 12.8134 20.0429C13.003 20.1128 13.2018 20.1949 13.4122 20.2817C14.2367 20.6218 15.1707 21.0074 16.0836 20.8629C17.7525 20.5989 18.653 18.6467 18.653 16.944C18.653 15.746 18.1285 15.0263 17.6655 14.3913ZM23.807 7.80133C21.2537 6.73536 18.2616 8.10112 16.7679 10.414C17.3017 7.43093 19.9154 5.15972 23.0496 5.15972C26.5683 5.15972 29.431 8.02241 29.431 11.5411C29.431 15.5028 27.2741 16.9945 24.9907 18.5739C22.9994 19.9511 20.9402 21.3752 20.9402 24.4456C20.9402 25.5987 19.9661 26.5727 18.813 26.5727C17.66 26.5727 16.6859 25.5987 16.6859 24.4407C16.6845 24.2381 16.689 24.0373 16.6992 23.8399C18.8451 23.5493 20.329 21.5409 21.21 20.0599C21.4253 19.7179 21.6112 19.4224 21.772 19.2196C22.033 18.8904 22.323 18.6495 22.6299 18.3944C23.3971 17.7569 24.2667 17.0342 24.3547 15.046C24.439 13.141 23.5141 11.5536 21.9409 10.9033C21.0146 10.5203 19.9589 10.4895 18.8879 10.8143C18.5736 10.9096 18.2618 11.0354 17.9552 11.1898C19.0969 9.43753 21.3355 8.31461 23.2774 9.11675C23.6405 9.26303 24.0537 9.08704 24.1999 8.7238C24.3462 8.36056 24.1703 7.94754 23.807 7.80133ZM18.8131 35.0814C15.6854 35.0814 13.1407 32.5367 13.1407 29.4091C13.1407 26.6436 13.1391 25.4115 13.136 23.2471C13.8826 23.578 14.5974 23.7835 15.2785 23.8633C15.2702 24.0562 15.2665 24.2508 15.268 24.4455C15.4625 29.1476 22.1636 29.1488 22.3585 24.4455C22.3585 22.1187 23.8761 21.069 25.7976 19.7402C26.9846 18.9192 28.2121 18.0702 29.1813 16.8178C31.5271 13.8869 31.4584 8.75748 28.5562 6.03475C23.6545 1.12199 15.273 4.64495 15.2503 11.5412C15.2407 14.8438 17.2061 15.1337 17.2351 16.9441C17.235 18.0325 16.6712 19.3343 15.8621 19.4624C15.3431 19.544 14.6366 19.2528 13.9532 18.9709C13.7398 18.8828 13.5191 18.7917 13.3043 18.7125C13.246 18.691 13.1877 18.6722 13.1293 18.656C13.1264 16.359 13.1231 13.4314 13.1231 11.5411C13.1231 6.06751 17.5762 1.61442 23.0497 1.61442C29.2722 1.6376 33.6999 7.09959 32.9152 13.1784C32.9113 13.2055 32.9091 13.2331 32.9084 13.2611C32.5346 17.7146 30.6735 19.2444 28.7153 20.8541C26.6359 22.5633 24.4856 24.3307 24.4856 29.409C24.4855 32.5367 21.9409 35.0814 18.8131 35.0814ZM32.6594 25.7734C32.107 27.2471 31.184 28.1272 30.0607 28.2513C27.9723 28.4211 26.2253 26.2654 27.6141 23.8089C29.4921 21.6811 31.7768 20.7891 33.1897 17.8391C33.3643 21.6338 33.2607 24.1694 32.6594 25.7734Z"/>
+                            <path d="M6.28512 13.8356C6.00823 14.1125 6.00823 14.5614 6.28512 14.8384C8.21067 16.6858 8.2106 20.0102 6.28512 21.8575C6.00823 22.1344 6.00823 22.5834 6.28512 22.8603C6.56207 23.1372 7.01096 23.1372 7.28792 22.8603C9.76355 20.4849 9.76348 16.211 7.28792 13.8357C7.01096 13.5588 6.56214 13.5588 6.28512 13.8356Z"/>
+                            <path d="M5.28249 15.841C5.00553 15.5642 4.55671 15.5642 4.27968 15.841C4.0028 16.1179 4.0028 16.5669 4.27968 16.8438C5.10494 17.6356 5.10487 19.0602 4.27968 19.8521C4.0028 20.129 4.0028 20.5779 4.27975 20.8548C4.55657 21.1318 5.00567 21.1317 5.28249 20.8548C6.65782 19.5349 6.65775 17.1607 5.28249 15.841Z"/>
+                            <path d="M2.77557 17.6386C2.38404 17.6386 2.06653 17.9561 2.06653 18.3477V18.3482C2.06653 18.7398 2.38404 19.057 2.77557 19.057C3.71605 19.0195 3.71591 17.6758 2.77557 17.6386Z"/>
+                            <path d="M25.9067 11.3109C26.8474 11.2733 26.8467 9.92992 25.9067 9.89276H25.9061C24.9653 9.93034 24.9666 11.2738 25.9067 11.3109Z"/>
+                            <path d="M29.5164 25.1351H29.5159C29.1244 25.1351 28.8071 25.4526 28.8071 25.8442C28.8446 26.7846 30.1882 26.7846 30.2255 25.8442C30.2255 25.4526 29.908 25.1351 29.5164 25.1351Z"/>
+                            <path d="M30.9522 22.7421H30.9518C30.5602 22.7421 30.2429 23.0596 30.2429 23.4512C30.2804 24.3916 31.6241 24.3916 31.6613 23.4512C31.6613 23.0596 31.3438 22.7421 30.9522 22.7421Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_173_168">
+                              <rect width="36.2687" height="36.2687" transform="translate(0.23877 0.194153)"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="title">
+                    <h6 class="text-start">Слуховые решения вдохновленные заботой</h6>
+                    <h2 class="text-start">О компании</h2>
+                  </div>
+                  <div class="content">
+                    <p>СлухОмск – ваш надежный партнер в мире звука и комфорта. Мы предоставляем широкий выбор слуховых аппаратов от мировых лидеров, индивидуальные ушные вкладыши, профессиональные услуги по подбору и настройке. Наша миссия – вернуть ясность звучания и радость общения каждому клиенту. Доверьтесь опыту и заботе для вашего лучшего слухового опыта</p>
+                    <div class="advantages">
+                      <div class="advantages-box d-flex align-items-center">
+                        <div class="item">
+                          <div class="icon w-100 h-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+                              <g clip-path="url(#clip0_178_17)">
+                                <path d="M21.8063 0.0130027C25.5049 0.0113978 29.1375 0.993145 32.332 2.85769C35.5265 4.72223 38.1681 7.40255 39.9861 10.6241C41.8042 13.8457 42.7334 17.4927 42.6787 21.1917C42.6239 24.8906 41.5871 28.5085 39.6744 31.6748L41.8812 33.8829C42.0377 34.0395 42.1256 34.2519 42.1256 34.4733C42.1256 34.6947 42.0377 34.9071 41.8812 35.0637L41.29 35.6542L49.9444 44.3093C50.2546 44.6196 50.5006 44.9879 50.6685 45.3933C50.8364 45.7986 50.9228 46.2331 50.9228 46.6719C50.9228 47.1106 50.8364 47.5451 50.6685 47.9505C50.5006 48.3558 50.2546 48.7241 49.9444 49.0344C49.6342 49.3447 49.2659 49.5908 48.8606 49.7587C48.4553 49.9266 48.021 50.013 47.5823 50.013C47.1436 50.013 46.7092 49.9266 46.3039 49.7587C45.8986 49.5908 45.5304 49.3447 45.2202 49.0344L36.5667 40.3776L35.9764 40.9688C35.8198 41.1254 35.6074 41.2133 35.386 41.2133C35.1646 41.2133 34.9523 41.1254 34.7957 40.9688L32.5881 38.7625C29.8321 40.4272 26.7285 41.4318 23.5199 41.6976C20.3113 41.9634 17.0847 41.4833 14.0924 40.2948C11.1002 39.1063 8.42335 37.2415 6.27127 34.8464C4.11919 32.4513 2.55021 29.5908 1.68702 26.4885C0.823818 23.3862 0.6898 20.1262 1.29545 16.9635C1.9011 13.8008 3.22999 10.8211 5.17822 8.25737C7.12643 5.69365 9.64117 3.61542 12.5258 2.1852C15.4104 0.754979 18.5867 0.0115354 21.8063 0.0130027ZM46.4008 47.8519C46.7188 48.1557 47.1417 48.3253 47.5814 48.3253C48.0212 48.3253 48.4441 48.1557 48.7621 47.8519C49.0751 47.5387 49.251 47.1139 49.251 46.671C49.251 46.2281 49.0751 45.8034 48.7621 45.4902L40.1086 36.835L37.7473 39.1967L46.4008 47.8519ZM35.386 39.1967L40.1086 34.4733L38.7292 33.092C37.4163 34.9088 35.8214 36.5039 34.005 37.8171L35.386 39.1967ZM21.8063 40.0986C25.6045 40.0986 29.3174 38.9721 32.4755 36.8616C35.6336 34.751 38.095 31.7512 39.5485 28.2414C41.002 24.7317 41.3823 20.8696 40.6413 17.1437C39.9003 13.4178 38.0713 9.99529 35.3856 7.30904C32.6998 4.6228 29.278 2.79344 25.5528 2.05231C21.8276 1.31117 17.9663 1.69155 14.4572 3.14534C10.9481 4.59912 7.94885 7.06102 5.83868 10.2197C3.72852 13.3784 2.60222 17.092 2.60222 20.8909C2.60797 25.9834 4.63309 30.8656 8.2333 34.4665C11.8335 38.0674 16.7148 40.0929 21.8063 40.0986Z" />
+                                <path d="M21.7561 3.34631C25.2173 3.34631 28.6007 4.37267 31.4786 6.29559C34.3565 8.21852 36.5995 10.9516 37.924 14.1494C39.2486 17.3471 39.5951 20.8657 38.9199 24.2604C38.2446 27.6551 36.5779 30.7733 34.1305 33.2207C31.6831 35.6681 28.5649 37.3348 25.1702 38.0101C21.7755 38.6853 18.2569 38.3387 15.0592 37.0142C11.8615 35.6897 9.12833 33.4467 7.20541 30.5688C5.28248 27.6909 4.25613 24.3075 4.25613 20.8463C4.2612 16.2066 6.10658 11.7583 9.38736 8.47755C12.6681 5.19676 17.1164 3.35139 21.7561 3.34631ZM21.7561 36.6796C24.8877 36.6796 27.9489 35.751 30.5527 34.0112C33.1564 32.2715 35.1858 29.7986 36.3842 26.9055C37.5826 24.0123 37.8962 20.8287 37.2852 17.7574C36.6743 14.686 35.1663 11.8648 32.952 9.65046C30.7377 7.43612 27.9164 5.92815 24.8451 5.31721C21.7737 4.70628 18.5901 5.01983 15.697 6.21822C12.8038 7.41661 10.331 9.44601 8.59119 12.0498C6.8514 14.6536 5.92279 17.7148 5.92279 20.8463C5.92743 25.0442 7.59706 29.0687 10.5654 32.0371C13.5337 35.0054 17.5583 36.675 21.7561 36.6796Z" />
+                                <path d="M23.4228 10.8463C23.6438 10.8463 23.8558 10.9341 24.012 11.0904C24.1683 11.2467 24.2561 11.4586 24.2561 11.6796C24.2561 11.9007 24.1683 12.1126 24.012 12.2689C23.8558 12.4252 23.6438 12.513 23.4228 12.513H20.0895C19.8684 12.513 19.6565 12.4252 19.5002 12.2689C19.3439 12.1126 19.2561 11.9007 19.2561 11.6796C19.2561 11.4586 19.3439 11.2467 19.5002 11.0904C19.6565 10.9341 19.8684 10.8463 20.0895 10.8463H23.4228Z" />
+                                <path d="M25.0895 10.013H18.4228C18.2018 10.013 17.9898 9.92518 17.8335 9.7689C17.6773 9.61262 17.5895 9.40066 17.5895 9.17965C17.5895 8.95863 17.6773 8.74667 17.8335 8.59039C17.9898 8.43411 18.2018 8.34631 18.4228 8.34631H25.0895C25.3105 8.34631 25.5224 8.43411 25.6787 8.59039C25.835 8.74667 25.9228 8.95863 25.9228 9.17965C25.9228 9.40066 25.835 9.61262 25.6787 9.7689C25.5224 9.92518 25.3105 10.013 25.0895 10.013Z" />
+                                <path d="M25.9228 20.8463C25.9228 21.0673 25.835 21.2793 25.6787 21.4356C25.5224 21.5919 25.3105 21.6797 25.0895 21.6797H18.4228C18.2018 21.6797 17.9898 21.5919 17.8335 21.4356C17.6773 21.2793 17.5895 21.0673 17.5895 20.8463C17.5895 20.6253 17.6773 20.4134 17.8335 20.2571C17.9898 20.1008 18.2018 20.013 18.4228 20.013H25.0895C25.3105 20.013 25.5224 20.1008 25.6787 20.2571C25.835 20.4134 25.9228 20.6253 25.9228 20.8463Z" />
+                                <path d="M20.0895 22.513H23.4228C23.6438 22.513 23.8558 22.6008 24.012 22.7571C24.1683 22.9134 24.2561 23.1253 24.2561 23.3463C24.2561 23.5673 24.1683 23.7793 24.012 23.9356C23.8558 24.0919 23.6438 24.1797 23.4228 24.1797H20.0895C19.8684 24.1797 19.6565 24.0919 19.5002 23.9356C19.3439 23.7793 19.2561 23.5673 19.2561 23.3463C19.2561 23.1253 19.3439 22.9134 19.5002 22.7571C19.6565 22.6008 19.8684 22.513 20.0895 22.513Z" />
+                                <path d="M23.4228 19.1797H20.0895C19.8684 19.1797 19.6565 19.0919 19.5002 18.9356C19.3439 18.7793 19.2561 18.5673 19.2561 18.3463C19.2561 18.1253 19.3439 17.9134 19.5002 17.7571C19.6565 17.6008 19.8684 17.513 20.0895 17.513H23.4228C23.6438 17.513 23.8558 17.6008 24.012 17.7571C24.1683 17.9134 24.2561 18.1253 24.2561 18.3463C24.2561 18.5673 24.1683 18.7793 24.012 18.9356C23.8558 19.0919 23.6438 19.1797 23.4228 19.1797Z" />
+                                <path d="M18.4228 31.6797H25.0895C25.3105 31.6797 25.5224 31.7675 25.6787 31.9238C25.835 32.08 25.9228 32.292 25.9228 32.513C25.9228 32.734 25.835 32.946 25.6787 33.1023C25.5224 33.2586 25.3105 33.3464 25.0895 33.3464H18.4228C18.2018 33.3464 17.9898 33.2586 17.8335 33.1023C17.6773 32.946 17.5895 32.734 17.5895 32.513C17.5895 32.292 17.6773 32.08 17.8335 31.9238C17.9898 31.7675 18.2018 31.6797 18.4228 31.6797Z" />
+                                <path d="M20.0895 30.8464C19.8684 30.8464 19.6565 30.7586 19.5002 30.6023C19.3439 30.446 19.2561 30.234 19.2561 30.013C19.2561 29.792 19.3439 29.58 19.5002 29.4238C19.6565 29.2675 19.8684 29.1797 20.0895 29.1797H23.4228C23.6438 29.1797 23.8558 29.2675 24.012 29.4238C24.1683 29.58 24.2561 29.792 24.2561 30.013C24.2561 30.234 24.1683 30.446 24.012 30.6023C23.8558 30.7586 23.6438 30.8464 23.4228 30.8464H20.0895Z" />
+                                <path d="M15.9228 6.67969C16.1438 6.67969 16.3558 6.76749 16.512 6.92377C16.6683 7.08005 16.7561 7.29201 16.7561 7.51302V9.17969C16.7561 10.5058 17.2829 11.7775 18.2206 12.7152C19.1583 13.6529 20.43 14.1797 21.7561 14.1797C23.0822 14.1797 24.354 13.6529 25.2917 12.7152C26.2293 11.7775 26.7561 10.5058 26.7561 9.17969V7.51302C26.7561 7.29201 26.8439 7.08005 27.0002 6.92377C27.1565 6.76749 27.3684 6.67969 27.5895 6.67969C27.8105 6.67969 28.0224 6.76749 28.1787 6.92377C28.335 7.08005 28.4228 7.29201 28.4228 7.51302V9.17969C28.4221 10.3713 28.1019 11.5409 27.4958 12.5669C26.8896 13.5928 26.0195 14.4375 24.9761 15.013C26.0199 15.5881 26.8903 16.4327 27.4965 17.4587C28.1027 18.4847 28.4224 19.6546 28.4224 20.8464C28.4224 22.0381 28.1027 23.208 27.4965 24.234C26.8903 25.26 26.0199 26.1046 24.9761 26.6797C26.0195 27.2552 26.8896 28.0999 27.4958 29.1259C28.1019 30.1518 28.4221 31.3214 28.4228 32.513V34.1797C28.4228 34.4007 28.335 34.6127 28.1787 34.7689C28.0224 34.9252 27.8105 35.013 27.5895 35.013C27.3684 35.013 27.1565 34.9252 27.0002 34.7689C26.8439 34.6127 26.7561 34.4007 26.7561 34.1797V32.513C26.7561 31.1869 26.2293 29.9152 25.2917 28.9775C24.354 28.0398 23.0822 27.513 21.7561 27.513C20.43 27.513 19.1583 28.0398 18.2206 28.9775C17.2829 29.9152 16.7561 31.1869 16.7561 32.513V34.1797C16.7561 34.4007 16.6683 34.6127 16.512 34.7689C16.3558 34.9252 16.1438 35.013 15.9228 35.013C15.7018 35.013 15.4898 34.9252 15.3335 34.7689C15.1773 34.6127 15.0895 34.4007 15.0895 34.1797V32.513C15.0902 31.3214 15.4103 30.1518 16.0165 29.1259C16.6227 28.0999 17.4927 27.2552 18.5361 26.6797C17.4923 26.1046 16.6219 25.26 16.0158 24.234C15.4096 23.208 15.0898 22.0381 15.0898 20.8464C15.0898 19.6546 15.4096 18.4847 16.0158 17.4587C16.6219 16.4327 17.4923 15.5881 18.5361 15.013C17.4927 14.4375 16.6227 13.5928 16.0165 12.5669C15.4103 11.5409 15.0902 10.3713 15.0895 9.17969V7.51302C15.0895 7.29201 15.1773 7.08005 15.3335 6.92377C15.4898 6.76749 15.7018 6.67969 15.9228 6.67969ZM16.7561 20.8464C16.7561 21.8353 17.0494 22.802 17.5988 23.6242C18.1482 24.4465 18.9291 25.0873 19.8427 25.4658C20.7563 25.8442 21.7617 25.9432 22.7316 25.7503C23.7015 25.5574 24.5924 25.0812 25.2917 24.3819C25.9909 23.6826 26.4671 22.7917 26.6601 21.8218C26.853 20.8519 26.754 19.8466 26.3755 18.9329C25.9971 18.0193 25.3562 17.2384 24.534 16.689C23.7117 16.1396 22.745 15.8464 21.7561 15.8464C20.4304 15.8477 19.1594 16.3749 18.2221 17.3123C17.2847 18.2497 16.7574 19.5207 16.7561 20.8464Z" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_178_17">
+                                  <rect width="50" height="50" transform="matrix(-1 0 0 1 50.9228 0.0130005)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <h5>25 лет опыта</h5>
+                          <p class="border-0 p-0 mb-0">СлухОмск является надежным проводником в мире ясного слуха. Наш опыт – ваша уверенность в качестве и заботе</p>
+                        </div>
+                      </div>
+                      <div class="advantages-box d-flex align-items-center">
+                        <div class="item">
+                          <div class="icon w-100 h-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="34" viewBox="0 0 50 34" fill="none">
+                              <g clip-path="url(#clip0_180_74)">
+                                <path d="M46.8496 14.1411L43.6203 13.4002C43.1891 13.3013 42.8175 13.0371 42.5699 12.6773C43.7224 11.8134 44.4732 10.4158 44.4732 8.84074V8.27084C45.4135 7.00264 45.489 5.26262 44.6224 3.90016L44.1839 3.2107L44.2661 2.96786C44.4898 2.30691 44.3879 1.57167 43.9935 1.00117C43.599 0.430765 42.957 0.0901489 42.2763 0.0901489H37.4359C36.7551 0.0901489 36.1131 0.430765 35.7187 1.00117C35.3242 1.57167 35.2223 2.30681 35.446 2.96796L35.5282 3.2107L35.0898 3.90006C34.2232 5.26252 34.2986 7.00254 35.2389 8.27074V8.84064C35.2389 10.4157 35.9897 11.8132 37.1422 12.6772C36.8946 13.0371 36.5229 13.3012 36.0918 13.4L32.8625 14.141C31.3749 14.4823 30.2479 15.619 29.8596 17.0634L29.6289 17.0105C28.9547 16.8558 28.3851 16.4092 28.0521 15.8077C29.5288 14.7922 30.5033 13.0626 30.5033 11.1032V2.65837C30.5033 2.10393 30.066 1.65449 29.5268 1.65449H24.7706C21.8628 1.65449 19.4972 4.08628 19.4972 7.07543V11.1034C19.4972 13.0628 20.4717 14.7923 21.9483 15.808C21.6154 16.4094 21.0459 16.856 20.3717 17.0107L20.1409 17.0636C19.7525 15.6192 18.6256 14.4825 17.138 14.1412L13.9087 13.4003C13.4775 13.3014 13.1059 13.0372 12.8583 12.6773C14.0107 11.8134 14.7615 10.4159 14.7615 8.84084V4.19831C14.7615 2.32066 13.2755 0.793063 11.4489 0.793063H8.83945C7.01289 0.793063 5.52686 2.32066 5.52686 4.19831V8.84084C5.52686 10.4159 6.27764 11.8134 7.43008 12.6773C7.18252 13.0372 6.81084 13.3013 6.37969 13.4003L3.15039 14.1412C1.29551 14.5668 0 16.2285 0 18.1822V25.1205C0 25.675 0.437207 26.1244 0.976562 26.1244H12.6252V32.4195C12.6252 32.9739 13.0624 33.4234 13.6018 33.4234H20.63C21.1693 33.4234 21.6065 32.9739 21.6065 32.4195C21.6065 31.8651 21.1693 31.4156 20.63 31.4156H14.5783V22.7178C14.5783 21.3514 15.4845 20.1891 16.7818 19.8913L19.1987 19.3368V23.1929C17.8817 23.6201 16.9241 24.8875 16.9241 26.3808V27.6505C16.9241 28.5271 17.6179 29.2401 18.4705 29.2401C19.0099 29.2401 19.4471 28.7907 19.4471 28.2362C19.4471 27.831 19.2135 27.4818 18.8772 27.3233V26.3808C18.8772 25.6449 19.4596 25.0464 20.1753 25.0464C20.891 25.0464 21.4733 25.645 21.4733 26.3808V27.3233C21.137 27.4819 20.9035 27.8311 20.9035 28.2362C20.9035 28.7907 21.3407 29.2401 21.8801 29.2401C22.7328 29.2401 23.4265 28.527 23.4265 27.6505V26.3808C23.4265 24.8876 22.4688 23.6202 21.1519 23.193V18.9853L24.2433 22.4118C24.4281 22.6165 24.6875 22.733 24.9593 22.733C25.2311 22.733 25.4904 22.6165 25.6753 22.4118L28.8649 18.8764C28.9761 18.9118 29.2298 18.9763 29.2298 18.9763V24.1921C28.5442 24.5569 28.0743 25.2926 28.0743 26.1394C28.0743 27.3479 29.0308 28.3311 30.2063 28.3311C31.382 28.3311 32.3385 27.3479 32.3385 26.1394C32.3385 25.2926 31.8686 24.5569 31.1829 24.1921V19.4244L33.2181 19.8914C34.5155 20.1892 35.4216 21.3514 35.4216 22.7179V31.4157H29.419C28.8798 31.4157 28.4425 31.8652 28.4425 32.4196C28.4425 32.974 28.8798 33.4235 29.419 33.4235H36.3981C36.9374 33.4235 37.3747 32.974 37.3747 32.4196V26.1245H49.0234C49.5627 26.1245 50 25.6751 50 25.1206V18.1823C50 16.2285 48.7045 14.5668 46.8496 14.1411ZM37.1919 8.84074V6.6037H37.371H42.3411H42.5201V8.84074C42.5201 10.3508 41.325 11.5793 39.8561 11.5793C38.3871 11.5793 37.1919 10.3509 37.1919 8.84074ZM37.3104 2.16456C37.3409 2.12049 37.3832 2.098 37.4358 2.098H42.2762C42.3288 2.098 42.371 2.12039 42.4015 2.16456C42.4319 2.20873 42.4387 2.25702 42.4214 2.30811L41.6468 4.59595H38.0649L37.2903 2.30811C37.2732 2.25702 37.2799 2.20873 37.3104 2.16456ZM39.856 13.5871C40.1672 13.5871 40.4712 13.5547 40.7653 13.4941C40.9115 13.7625 41.0898 14.0095 41.2925 14.2331L39.7972 15.8905L38.3605 14.298C38.5882 14.0582 38.7863 13.7886 38.9467 13.4942C39.2407 13.5548 39.5447 13.5871 39.856 13.5871ZM21.5843 12.0948H24.0003C24.3652 12.0948 24.7062 11.9908 24.9999 11.8127C25.2937 11.9908 25.6346 12.0948 25.9995 12.0948H28.4155C27.9941 13.6265 26.6229 14.7526 24.9998 14.7526C23.3769 14.7526 22.0057 13.6265 21.5843 12.0948ZM28.55 8.10299V10.0634C28.55 10.0764 28.5396 10.0871 28.527 10.0871H25.9997C25.987 10.0871 25.9767 10.0764 25.9767 10.0634V8.10299C25.9767 8.08994 25.987 8.0793 25.9997 8.0793H28.527C28.5396 8.0793 28.55 8.08994 28.55 8.10299ZM24.0234 8.10299V10.0634C24.0234 10.0764 24.0131 10.0871 24.0004 10.0871H21.4731C21.4604 10.0871 21.4501 10.0764 21.4501 10.0634V8.10299C21.4501 8.08994 21.4604 8.0793 21.4731 8.0793H24.0004C24.0131 8.0793 24.0234 8.08994 24.0234 8.10299ZM24.7703 3.66224H28.5499V6.07155H28.5269H21.5966C22.0146 4.67787 23.2792 3.66224 24.7703 3.66224ZM7.47998 8.84074V7.30642H12.8082V8.84074C12.8082 10.3508 11.6131 11.5793 10.1441 11.5793C8.6752 11.5793 7.47998 10.3509 7.47998 8.84074ZM8.83945 2.80072H11.4486C12.1982 2.80072 12.8081 3.42764 12.8081 4.19821V5.29866H7.47998V4.19821C7.47998 3.42764 8.08984 2.80072 8.83945 2.80072ZM10.144 13.5871C10.4553 13.5871 10.7593 13.5547 11.0534 13.4941C11.2138 13.7885 11.4119 14.0581 11.6396 14.298L10.2029 15.8905L8.70762 14.2331C8.91025 14.0095 9.08857 13.7625 9.23477 13.4941C9.52881 13.5548 9.83281 13.5871 10.144 13.5871ZM16.3563 17.9319C14.1595 18.4359 12.6252 20.404 12.6252 22.7178V24.1166H1.95312V18.1822C1.95312 17.1758 2.62041 16.3199 3.57588 16.1007C3.57588 16.1007 6.94248 15.3244 7.01025 15.3045L9.48682 18.0494C9.67168 18.2542 9.93105 18.3706 10.2028 18.3706C10.4746 18.3706 10.734 18.2542 10.9188 18.0494L13.3724 15.33C13.4093 15.3397 16.7121 16.1007 16.7121 16.1007C17.4424 16.2682 18.003 16.8082 18.2274 17.5025L16.3563 17.9319ZM24.9593 20.2527L22.8134 17.8743C23.1912 17.5137 23.5068 17.0862 23.7425 16.6095C24.1467 16.707 24.5673 16.7603 24.9999 16.7603C25.4326 16.7603 25.8532 16.7071 26.2573 16.6095C26.4839 17.0677 26.7841 17.4808 27.1427 17.8325L24.9593 20.2527ZM48.0469 24.1166H37.3748V22.7178C37.3748 20.404 35.8405 18.4359 33.6437 17.9319L31.7726 17.5025C31.9969 16.8082 32.5576 16.2682 33.2879 16.1007C33.2879 16.1007 36.5907 15.3396 36.6276 15.33L39.0812 18.0494C39.266 18.2542 39.5254 18.3706 39.7972 18.3706C40.0689 18.3706 40.3283 18.2542 40.5132 18.0494L42.9897 15.3045C43.0575 15.3244 46.4242 16.1007 46.4242 16.1007C47.3797 16.3199 48.047 17.1758 48.047 18.1822V24.1166H48.0469Z" />
+                                <path d="M7.21699 19.0871C7.15342 18.6092 6.74531 18.2402 6.25 18.2402C5.75469 18.2402 5.34658 18.6092 5.28301 19.0871C4.80508 19.1507 4.43604 19.5588 4.43604 20.0541C4.43604 20.5495 4.80508 20.9576 5.28301 21.0211C5.34658 21.4991 5.75469 21.8681 6.25 21.8681C6.74531 21.8681 7.15342 21.4991 7.21699 21.0211C7.69492 20.9576 8.06396 20.5495 8.06396 20.0541C8.06396 19.5588 7.69492 19.1507 7.21699 19.0871Z" />
+                                <path d="M45.2117 19.0871C45.1481 18.6092 44.7399 18.2402 44.2447 18.2402C43.7495 18.2402 43.3413 18.6092 43.2777 19.0871C42.7999 19.1507 42.4309 19.5588 42.4309 20.0541C42.4309 20.5495 42.7999 20.9576 43.2777 21.0211C43.3413 21.4991 43.7494 21.8681 44.2447 21.8681C44.7399 21.8681 45.1481 21.4991 45.2117 21.0211C45.6896 20.9577 46.0587 20.5495 46.0587 20.0541C46.0587 19.5588 45.6896 19.1507 45.2117 19.0871Z" />
+                                <path d="M25.0244 32.9698C25.5638 32.9698 26.001 32.5326 26.001 31.9933C26.001 31.4539 25.5638 31.0167 25.0244 31.0167C24.4851 31.0167 24.0479 31.4539 24.0479 31.9933C24.0479 32.5326 24.4851 32.9698 25.0244 32.9698Z" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_180_74">
+                                  <rect width="50" height="33.3333" transform="translate(0 0.0901489)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <h5>Квалифицированные специалисты</h5>
+                          <p class="border-0 p-0 mb-0">Наши эксперты стремятся обеспечить вам максимальный комфорт и ясность восприятия звука.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-block mt-5">
+                    <a href="#">
+                      <button class="btn">Подробнее</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="test">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="test-box d-md-flex d-block align-items-center justify-content-between ">
+                    <div class="title">
+                      <h2>Пройди тест слуха онлайн</h2>
+                      <h6>Узнай свой уровень слуха прямо сейчас. БЕСПЛАТНО</h6>
+                    </div>
+                    <div class="btn-block">
+                      <a href="#">
+                        <button class="btn btn-light w-100">Пройти</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="container">
+              <div class="row">
+                <div class="title">
+                  <h6 class="text-center">Экономьте время и получайте точные ответы</h6>
+                  <h2 class="text-center">Часто задаваемые вопросы</h2>
+                </div>
+                <div class="accordion" id="accordionExample">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4>Для каких возрастов?</h4>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <p>Посещение Лаборатории слухопротезирования — это замечательная возможность в прежних красках слышать всю радугу звуков, непринужденно общаться с людьми, стать полноценным членом современного общества.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4>Есть ли русский язык?</h4>
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4>Что мы предлагаем?</h4>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="request">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="title">
+                    <h6 class="text-start">Сделайте шаг к восстановлению</h6>
+                    <h2 class="text-start">Почему выбирают нас</h2>
+                  </div>
+                  <div class="advantages-item">
+                    <div class="item d-flex align-items-top">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                          <g clip-path="url(#clip0_196_60)">
+                            <path d="M15.1322 18.4119L28.2548 4.26567L29.9872 5.81586L15.2525 21.7L7.21985 14.2003L8.83484 12.532L15.1322 18.4119ZM29.0771 10.1772L27.2496 12.1536C27.5149 13.1542 27.6562 14.2034 27.6562 15.2844C27.6562 22.1383 21.9785 27.7146 15 27.7146C8.02148 27.7146 2.34375 22.1383 2.34375 15.2844C2.34375 8.43049 8.02148 2.85414 15 2.85414C18.2329 2.85414 21.186 4.05149 23.4256 6.01745L25.0056 4.30883C22.2512 1.88087 18.7297 0.552246 15 0.552246C10.9935 0.552246 7.22644 2.08463 4.39343 4.86722C1.56024 7.64964 0 11.3494 0 15.2844C0 19.2194 1.56024 22.9191 4.39343 25.7016C7.22644 28.4842 10.9935 30.0165 15 30.0165C19.0065 30.0165 22.7736 28.4842 25.6066 25.7016C28.4398 22.9191 30 19.2194 30 15.2844C30 13.5134 29.683 11.7905 29.0771 10.1772Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_196_60">
+                              <rect width="30" height="29.4643" transform="translate(0 0.552246)"/>
+                            </clipPath>
+                          </defs>
+                        </svg>                     
+                      </div>
+                      <div class="content">
+                        <h5>Широкий выбор товаров</h5>
+                        <p class="mb-0">Широкий ассортимент слуховых аппаратов от ведущих мировых брендов, инновационной реабилитационной техники</p>
+                      </div>
+                    </div>
+                    <div class="item d-flex align-items-top">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                          <g clip-path="url(#clip0_196_60)">
+                            <path d="M15.1322 18.4119L28.2548 4.26567L29.9872 5.81586L15.2525 21.7L7.21985 14.2003L8.83484 12.532L15.1322 18.4119ZM29.0771 10.1772L27.2496 12.1536C27.5149 13.1542 27.6562 14.2034 27.6562 15.2844C27.6562 22.1383 21.9785 27.7146 15 27.7146C8.02148 27.7146 2.34375 22.1383 2.34375 15.2844C2.34375 8.43049 8.02148 2.85414 15 2.85414C18.2329 2.85414 21.186 4.05149 23.4256 6.01745L25.0056 4.30883C22.2512 1.88087 18.7297 0.552246 15 0.552246C10.9935 0.552246 7.22644 2.08463 4.39343 4.86722C1.56024 7.64964 0 11.3494 0 15.2844C0 19.2194 1.56024 22.9191 4.39343 25.7016C7.22644 28.4842 10.9935 30.0165 15 30.0165C19.0065 30.0165 22.7736 28.4842 25.6066 25.7016C28.4398 22.9191 30 19.2194 30 15.2844C30 13.5134 29.683 11.7905 29.0771 10.1772Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_196_60">
+                              <rect width="30" height="29.4643" transform="translate(0 0.552246)"/>
+                            </clipPath>
+                          </defs>
+                        </svg>                     
+                      </div>
+                      <div class="content">
+                        <h5>Гарантия и надежность</h5>
+                        <p class="mb-0">Наши слуховые аппараты сопровождаются надежной гарантией, обеспечивая вас долгосрочной защитой и спокойствием</p>
+                      </div>
+                    </div>
+                    <div class="item d-flex align-items-top">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                          <g clip-path="url(#clip0_196_60)">
+                            <path d="M15.1322 18.4119L28.2548 4.26567L29.9872 5.81586L15.2525 21.7L7.21985 14.2003L8.83484 12.532L15.1322 18.4119ZM29.0771 10.1772L27.2496 12.1536C27.5149 13.1542 27.6562 14.2034 27.6562 15.2844C27.6562 22.1383 21.9785 27.7146 15 27.7146C8.02148 27.7146 2.34375 22.1383 2.34375 15.2844C2.34375 8.43049 8.02148 2.85414 15 2.85414C18.2329 2.85414 21.186 4.05149 23.4256 6.01745L25.0056 4.30883C22.2512 1.88087 18.7297 0.552246 15 0.552246C10.9935 0.552246 7.22644 2.08463 4.39343 4.86722C1.56024 7.64964 0 11.3494 0 15.2844C0 19.2194 1.56024 22.9191 4.39343 25.7016C7.22644 28.4842 10.9935 30.0165 15 30.0165C19.0065 30.0165 22.7736 28.4842 25.6066 25.7016C28.4398 22.9191 30 19.2194 30 15.2844C30 13.5134 29.683 11.7905 29.0771 10.1772Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_196_60">
+                              <rect width="30" height="29.4643" transform="translate(0 0.552246)"/>
+                            </clipPath>
+                          </defs>
+                        </svg>                     
+                      </div>
+                      <div class="content">
+                        <h5>Индивидуальный подход</h5>
+                        <p class="mb-0">Наши опытные специалисты тщательно слушают ваши потребности, предлагая персонализированные решения</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <form novalidate>
+                    <div class="row">
+                      <div class="title">
+                        <h6 class="text-center">Качественный подход</h6>
+                        <h4 class="text-center">Записаться на прием</h4>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="name" placeholder="Ваше ФИО" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="mail" placeholder="Ваш email" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="phone" placeholder="Ваш телефон" required>
+                      </div>
+                      <div class="col-md-6">
+                        <select class="form-select" id="branch" required>
+                          <option selected disabled value="">Выберите филиал</option>
+                          <option>Перелёта, 7 к1</option>
+                          <option>Красный Путь, 131</option>
+                          <option>Б. Хмельницкого, 216</option>
+                          <option>10 лет Октября 105</option>
+                          <option>Заозерная 28</option>
+                        </select>
+                      </div>
+                      <div class="col-12">
+                        <textarea class="form-control" id="message" rows="3" placeholder="Ваше сообщение"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="check" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Я ознакомлен и согласен с условиями <a href="#">политики конфиденциальности</a>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="btn-block">
+                          <button class="btn btn-light w-100">Записаться</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="free">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="img-box h-100">
+                    <img class="w-100 h-100 object-fit-cover object-position-end" src="assets/img/free.jpg" alt="Free">
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="title">
+                    <h6 class="text-start">Решите свои проблемы со слухом прямо сейчас</h6>
+                    <h2 class="text-start">Бесплатное пробное ношение слухового аппарата</h2>
+                  </div>
+                  <div class="content">
+                    <p>Будьте уверены, что ваш слух и комфорт будут в приоритете, ведь цель наших специалистов - помочь вам найти идеальное решение для ваших слуховых потребностей. У нас вы можете опробовать передовые технологии и качественные слуховые аппараты, чтобы оценить их эффективность и преимущества. Наша команда опытных специалистов готова предоставить вам бесплатную консультацию, а также помощь в подборе и настройке слухового аппарата. Возвращайте себе полноценное слушание с помощью бесплатного пробного ношения слухового аппарата уже сегодня!</p>
+                  </div>
+                  <div class="btn-block">
+                    <a href="#">
+                      <button class="btn">Подробнее</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="news">
+            <div class="container">
+              <div class="row">
+                <div class="title">
+                  <h6 class="text-center">Исследуйте разнообразные темы</h6>
+                  <h2 class="text-center">Статьи</h2>
+                </div>
+                <div class="col-lg-4">
+                  <a href="post.html">
+                    <div class="card mb-5">
+                      <div class="card-header position-relative">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/news-1.jpg" alt="News">
+                        <div class="date position-absolute">
+                          <p class="mb-0">16 Января, 2024</p>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4>Вирусные инфекции и потеря слуха</h4>
+                        <div class="link d-flex">
+                          <p class="d-flex align-items-center mb-0">
+                            Читать далее
+                            <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                <g clip-path="url(#clip0_162_54)">
+                                  <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_162_54">
+                                    <rect width="16" height="10" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4">
+                  <a href="post.html">
+                    <div class="card mb-5">
+                      <div class="card-header position-relative">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/news-2.jpg" alt="News">
+                        <div class="date position-absolute">
+                          <p class="mb-0">16 Января, 2024</p>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4>Депрессия и потеря слуха</h4>
+                        <div class="link d-flex">
+                          <p class="d-flex align-items-center mb-0">
+                            Читать далее
+                            <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                <g clip-path="url(#clip0_162_54)">
+                                  <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_162_54">
+                                    <rect width="16" height="10" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4">
+                  <a href="post.html">
+                    <div class="card mb-5">
+                      <div class="card-header position-relative">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/img/news-3.jpg" alt="News">
+                        <div class="date position-absolute">
+                          <p class="mb-0">16 Января, 2024</p>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4>Ушная сера и слуховые аппараты</h4>
+                        <div class="link d-flex">
+                          <p class="d-flex align-items-center mb-0">
+                            Читать далее
+                            <div class="arrow-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                <g clip-path="url(#clip0_162_54)">
+                                  <path d="M15.8596 4.64525L11.5603 0.147289C11.4701 0.0529813 11.3478 0 11.2203 0C11.0928 0 10.9705 0.0529813 10.8803 0.147289C10.7901 0.241596 10.7395 0.369504 10.7395 0.502875C10.7395 0.636246 10.7901 0.764154 10.8803 0.858462L14.362 4.498H0.480013C0.352705 4.498 0.230612 4.55089 0.140592 4.64503C0.0505726 4.73917 0 4.86686 0 5C0 5.13314 0.0505726 5.26083 0.140592 5.35497C0.230612 5.44911 0.352705 5.502 0.480013 5.502H14.362L10.8803 9.14154C10.7901 9.23585 10.7395 9.36375 10.7395 9.49712C10.7395 9.6305 10.7901 9.7584 10.8803 9.85271C10.9705 9.94702 11.0928 10 11.2203 10C11.3478 10 11.4701 9.94702 11.5603 9.85271L15.8596 5.35475C15.9495 5.26062 16 5.13303 16 5C16 4.86697 15.9495 4.73938 15.8596 4.64525Z"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_162_54">
+                                    <rect width="16" height="10" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-12">
+                <div class="navbar-brand">
+                  <a href="#">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/img/logo.png" alt="logo">
+                      <div class="name">
+                        <h3>Лаборатория</h3>
+                        <h6 class="mb-0">слуха и протезирования</h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="slogan-footer">
+                  <p>Мы стремимся создать комфортное и доверительное окружение, где вы сможете получить профессиональную помощь и поддержку.</p>
+                </div>
+                <div class="social-icon">
+                  <div class="item mb-0 d-flex align-items-center">
+                    <a href="#" target="_blank">
+                      <div class="icon d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                          <g clip-path="url(#clip0_159_307)">
+                            <path d="M16.5387 0.175353L0.591585 6.47016C-0.0501506 6.76328 -0.267208 7.35035 0.436449 7.66893L4.52762 8.99976L14.4194 2.74208C14.9595 2.34922 15.5125 2.45398 15.0367 2.88612L6.54093 10.7601L6.27405 14.0923C6.52125 14.6068 6.97385 14.6092 7.26255 14.3535L9.61303 12.0769L13.6386 15.1625C14.5736 15.7291 15.0823 15.3635 15.2835 14.325L17.9239 1.52713C18.198 0.248818 17.7305 -0.314406 16.5387 0.175353Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_159_307">
+                              <rect width="18" height="15.4286"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="#" target="_blank">
+                      <div class="icon d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path d="M1.26525 1.26525C0 2.5305 0 4.56714 0 8.64V9.36C0 13.4329 0 15.4695 1.26525 16.7347C2.5305 18 4.56714 18 8.64 18H9.36C13.4329 18 15.4695 18 16.7347 16.7347C18 15.4695 18 13.4329 18 9.36V8.64C18 4.56714 18 2.5305 16.7347 1.26525C15.4695 0 13.4329 0 9.36 0H8.64C4.56714 0 2.5305 0 1.26525 1.26525ZM3.0375 5.47501H5.09251C5.16001 8.91 6.67499 10.365 7.875 10.665V5.47501H9.81V8.4375C10.995 8.31001 12.24 6.96001 12.66 5.47501H14.595C14.4367 6.24516 14.1212 6.97432 13.6682 7.61701C13.2153 8.25967 12.6346 8.80196 11.9625 9.21001C12.7129 9.58255 13.3757 10.1101 13.9071 10.7579C14.4384 11.4056 14.8263 12.1588 15.045 12.9675H12.915C12.7187 12.265 12.3193 11.6361 11.7669 11.1598C11.2145 10.6834 10.5337 10.3809 9.81 10.29V12.9675H9.57749C5.47501 12.9675 3.135 10.155 3.0375 5.47501Z"/>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="#" target="_blank">
+                      <div class="icon d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
+                          <g clip-path="url(#clip0_159_314)">
+                            <path d="M5.31827 2.7225C6.40039 2.7225 7.28043 3.58518 7.28043 4.64595C7.28043 5.7057 6.40039 6.56858 5.31827 6.56858C4.23718 6.56858 3.3561 5.7057 3.3561 4.64595C3.3561 3.58518 4.23718 2.7225 5.31827 2.7225ZM5.31827 9.29006C7.93229 9.29006 10.0572 7.20707 10.0572 4.64595C10.0572 2.08381 7.93229 0 5.31827 0C2.70487 0 0.579322 2.08381 0.579322 4.64595C0.579322 7.20697 2.70487 9.29006 5.31827 9.29006ZM7.23557 13.0798C8.20032 12.8643 9.13075 12.4902 9.98752 11.9625C10.6359 11.5618 10.8315 10.7215 10.4228 10.0857C10.0146 9.44859 9.15787 9.25702 8.50831 9.65763C6.56722 10.8545 4.06785 10.854 2.12781 9.65763C1.47814 9.25702 0.621471 9.44869 0.213744 10.0857C-0.194923 10.722 -3.14912e-05 11.5618 0.648597 11.9625C1.50526 12.4896 2.43569 12.8643 3.40045 13.0798L0.750947 15.6769C0.209258 16.2084 0.209257 17.07 0.751468 17.6014C1.02283 17.8669 1.37788 17.9999 1.73281 17.9999C2.08837 17.9999 2.44393 17.867 2.7153 17.6014L5.31764 15.0493L7.92228 17.6014C8.46397 18.1329 9.34285 18.1329 9.88496 17.6014C10.4277 17.07 10.4277 16.2078 9.88496 15.6769L7.23557 13.0798Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_159_314">
+                              <rect width="10.6364" height="18"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="title">
+                  <h4>Меню</h4>
+                </div>
+                <div class="footer-menu">
+                  <ul class="list-group border-0 list-group-flush">
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">Слуховые аппараты</a>
+                    </li>
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">Акции</a>
+                    </li>
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">О компании</a>
+                    </li>
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">Тест слуха</a>
+                    </li>
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="title">
+                  <h4>Время работы</h4>
+                </div>
+                <div class="footer-menu">
+                  <ul class="list-group border-0 list-group-flush">
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Понедельник</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Вторник</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Среда</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Четверг</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Пятница</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Суббота</a>
+                      <a class="nav-link d-inline time">Выходной</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Воскресенье</a>
+                      <a class="nav-link d-inline time">Выходной</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="copyright">
+                  <p class="mb-0 text-center">Copyright © 2024. Все права защищены. Разработка и поддержка: <a href="https://sibsr.ru/" target="_blank">ООО «СибСР»</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </body>
+        <!--JQuery link-->
+        <script src="assets/jquery/jquery.js"></script>
+        <!--JS-->
+        <script src="assets/owl-carousel/script/owl.carousel.min.js"></script>
+        <!--Bootstrap JS-->
+        <script src="assets/bootstrap/script/bootstrap.bundle.min.js"></script>
+        <!--JS-->
+        <script src="assets/script/script.js"></script>
+        <!--wow.js-->
+        <script src="assets/wow/wow.min.js"></script>
+        <script>
+          new WOW().init();
+          </script>
+  </html>

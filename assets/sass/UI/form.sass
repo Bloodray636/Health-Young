@@ -1,0 +1,30 @@
+%form
+    form
+        .row
+            @media screen and (max-width: 991px)
+                &
+                    flex-direction: column!important
+        label
+            margin-bottom: 16px
+        input
+            margin-bottom: 24px
+            border-radius: 8px
+            border: 1px solid #B0B0B0
+            height: 44px
+            box-shadow: none!important
+            transition: .5s ease
+        textarea
+            margin-bottom: 24px
+            border-radius: 8px
+            border: 1px solid #B0B0B0
+            height: 118px
+            box-shadow: none!important
+            transition: .5s ease
+            resize: none!important
+        input[type="checkbox"]
+            width: 16px
+            height: 16px
+            &:checked
+                background-color: $green
+        .form-check
+            padding-left: 2.3em

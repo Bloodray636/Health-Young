@@ -1,0 +1,233 @@
+@import "config.sass"
+
+h1
+    color: $blue!important
+
+h2
+    color: $blue!important
+
+h4
+    color: $blue!important
+
+h6
+    color: $green!important
+
+.btn
+    background-color: $green!important
+    color: $white!important
+
+p
+    color: $light-blue
+
+label
+    color: $blue
+    a
+        color: $green
+
+textarea, input
+    &:focus 
+        border: 1px solid $green!important
+        
+
+.top-contact
+    background: $green
+    .icon
+        p
+            color: $white
+        &:hover
+            transition: .5s ease
+            p
+                color: $blue
+            svg
+                fill: $blue
+    svg
+        fill: $white
+    a
+        color: $white
+        transition: .3s ease
+        &:hover
+            color: $orange
+    .social-icon
+        .ok
+            transition: .3s ease
+            &:hover
+                fill: $ok
+        .vk
+            transition: .3s ease
+            &:hover
+                fill: $vk
+        .viber
+            transition: .3s ease
+            &:hover
+                fill: $viber
+        .whatsapp
+            transition: .3s ease
+            &:hover
+                fill: $whatsapp
+
+.logo-block
+    .logo
+        .eye
+            .icon
+                &:hover 
+                    svg
+                        fill: $orange
+                    p
+                        color: $orange!important
+                        
+                p
+                    color: $black
+                    transition: .3s ease
+
+.navbar
+    border-bottom: 1px solid $grey-2
+    box-shadow: 0px 4px 10px 0px $grey-2
+    .navbar-nav
+        .dropdown
+            .dropdown-menu
+                background: $white!important
+                @media screen and (min-width: 991px)
+                    &
+                        background: transparent
+                .dropdown-item
+                    background: transparent!important
+                    color: $black!important
+                    transition: .3s ease
+                    &:hover
+                        color: $green!important
+    .navbar-toggler
+        background-color: $green
+        transition: .5s ease
+        svg
+            fill: $white
+    .nav-link
+        color: $blue!important
+        &:hover
+            color: $green!important
+    .offcanvas
+        background-color: $white!important
+    .support
+        .search
+            &::after
+                background: $blue
+        .search, .eye
+            svg
+                fill: $blue
+            a:hover svg 
+                fill: $green
+
+.about
+    .advantages
+        .item
+            .icon
+                .ellipse
+                    background: $ellipse
+                svg
+                    fill: $green
+
+.reviews
+    .owl-carousel
+        .thumbnail
+            .card
+                .title
+                    h5
+                        color: $blue
+                    p
+                        color: $green
+                .card-body
+                    border: 1px solid $dots
+                    transition: .5s ease
+                &:hover .card-body
+                    border: 1px solid $green!important
+
+.contact
+    .item
+        box-shadow: 2px 2px 52px 6px $shadow
+        .icon
+            background: $ellipse
+            svg
+                fill: $green
+        .text
+            p
+                &:nth-child(2)
+                    color: $green
+
+.news
+    .card
+        box-shadow: 2px 2px 52px 6px $shadow
+        &-body
+            .link
+                p
+                    color: $green
+
+.owl-dots
+    button
+        background: $dots
+        &.active
+            background: $green
+
+.owl-next, .owl-prev
+    background-color: $grey
+    transition: .5s ease
+    &:hover
+        background-color: $light-blue
+    span
+        color: $blue
+    
+.owl-carousel 
+    .thumbnail 
+        &:hover
+            svg
+                fill: $green
+        svg
+            fill: $grey
+        .title 
+            h2
+                color: $blue
+            p
+                color: $black
+        .date
+            p
+                color: $black
+
+footer
+    border: $border-top
+    a
+        color: $black
+        transition: .3s ease
+        &:hover
+            color: $green
+    .contact
+        svg
+            fill: $black
+    .social-icon
+        .item
+            .icon
+                background: $ellipse
+                svg
+                    fill: $green
+    .list-group
+        &-item
+            a
+                color: $blue
+    .contact-footer
+        p
+            color: $blue
+    .copyright
+        p
+            color: $blue
+            a
+                color: $green
+
+.breadcrumb
+    a
+        color: $grey
+        transition: .3s ease
+        &:hover
+            color: $green
+
+.post
+    .date
+        .icon
+            svg
+                fill: $green

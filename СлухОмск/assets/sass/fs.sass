@@ -1,0 +1,120 @@
+@import config.sass
+
+@font-face
+    font-family: "Roboto-Light", sans-serif
+    src: url(../fonts/Roboto-Light.ttf)
+    
+@font-face
+    font-family: "Roboto-Regular", sans-serif
+    src: url(../fonts/Roboto-Regular.ttf)
+
+@font-face
+    font-family: "Roboto-Medium", sans-serif
+    src: url(../fonts/Roboto-Medium.ttf)
+
+@font-face
+    font-family: "Roboto-Bold"
+    src: url(../fonts/Roboto-Bold.ttf)
+
+@font-face
+    font-family: "Roboto-Black"
+    src: url(../fonts/Roboto-Black.ttf)
+
+@font-face
+    font-family: "Roboto-Thin"
+    src: url(../fonts/Roboto-Thin.ttf)
+
+body
+    font-family: $regular!important
+
+h2, h3, h4, h5, h6, a, p, span, label, input, textarea, li, ul, ol, button
+    line-height: normal
+    font-style: normal
+
+h1
+    font-size: clamp(1.5rem, -3.9651rem + 8.8235vw, 3.75rem)!important
+    font-family: $black
+
+h2
+    font-size: clamp(1.5rem, 1.2185rem + 1.6086vw, 2.625rem)!important
+    font-family: $black
+
+h3
+    font-size: clamp(1.5rem, 0.2855rem + 1.9608vw, 2rem)!important
+    font-family: $black
+
+h4
+    font-size: clamp(1.25rem, 0.6428rem + 0.9804vw, 1.5rem)!important
+    font-weight: 600!important
+
+h5
+    font-size: clamp(0.875rem, 0.5714rem + 0.4902vw, 1rem)!important
+    font-family: $medium
+    font-weight: 600!important
+
+h6
+    font-size: clamp(0.75rem, 0.1428rem + 0.9804vw, 1rem)!important
+    font-family: $medium!important
+    font-weight: 500!important
+
+.title
+    h6
+        font-weight: bold!important
+
+p
+    font-size: clamp(0.875rem, 0.8437rem + 0.1787vw, 1rem)!important
+
+button
+    font-size: clamp(0.875rem, 0.2678rem + 0.9804vw, 1.125rem)!important
+    font-family: $medium!important
+    font-weight: 600!important
+    @media screen and (max-width: 1399px)
+        font-size: clamp(0.875rem, 0.2678rem + 0.9804vw, 1.125rem)!important
+
+a
+    font-size: clamp(0.875rem, 0.8369rem + 0.2176vw, 1rem)!important
+
+label
+    font-size: clamp(0.875rem, 0.5714rem + 0.4902vw, 1rem)!important
+    font-family: $regular
+    font-weight: 400
+
+.top-contact
+    p
+        font-size: clamp(0.75rem, 0.5983rem + 0.3165vw, 0.875rem)!important
+
+.navbar
+    .nav-link, .dropdown-item
+        font-size: clamp(0.875rem, 0.2678rem + 0.9804vw, 1.125rem)!important
+        font-family: $regular
+
+.service
+    .card
+        .card-body
+            .link
+                a
+                    font-size: clamp(0.875rem, 0.2678rem + 0.9804vw, 1.125rem)!important
+
+
+.tabs
+    .content
+        .tab-content
+            .tab-pane
+                .link
+                    a
+                        font-size: clamp(0.875rem, 0.2678rem + 0.9804vw, 1.125rem)!important
+
+form
+    h6
+        font-size: clamp(0.75rem, 0.4464rem + 0.4902vw, 0.875rem)!important
+        font-family: $regular!important
+        font-weight: normal!important
+    h4
+        font-size: clamp(1.125rem, 0.2142rem + 1.4706vw, 1.5rem)!important
+        font-family: $regular!important
+        font-weight: normal!important
+
+.slogan-footer
+    p
+        font-size: clamp(0.75rem, 0.4464rem + 0.4902vw, 0.875rem)!important
+

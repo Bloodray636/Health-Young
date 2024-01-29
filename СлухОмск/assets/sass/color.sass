@@ -1,0 +1,256 @@
+h1, h2, h4, h5 
+    color: $blue!important
+    
+h3, h6
+    color: $green!important
+
+p
+    color: $dark
+
+.btn
+    background: $linaer-btn
+    color: $white!important
+    &::after
+        background: $line
+    .icon
+        svg
+            fill: $white
+
+.btn
+    &.btn-light
+        background: $white!important
+        color: $blue!important
+
+.btn
+    &.btn-dark
+        background: $blue!important
+        color: $white!important
+
+.btn
+    &.btn-tabs
+        background: $white
+        color: $blue!important
+        border: 1px solid $green!important
+        transition: .5s ease
+        &.active
+            background-image: linear-gradient($linear)
+            color: $white!important
+        &:hover
+            box-shadow: 0px 0px 50px $shadow
+
+.linear-slider
+    background-image: linear-gradient(90deg, #01D6A3 -4.77%, rgba(217, 217, 217, 0.00) 103.83%)
+    
+.top-contact
+    background: $blue
+    .modal-content
+        background-color: transparent
+        border: none!important
+    .icon
+        svg
+            fill: linear-gradient($linear)
+            path 
+                fill: linear-gradient($linear)
+            defs
+                linearGradient
+                    stop
+                        stop-color: $gradient-color-1
+                        &:last-child
+                            stop-color: $gradient-color-2
+        &.search, &.mail
+            border-left: 1px solid $white
+    a
+        p
+            color: $white
+
+.navbar
+    &-brand
+        h6
+            color: $blue
+    .nav-link
+        color: $blue
+        &:hover
+            color: $green
+
+.carousel-caption
+    p
+        color: $white!important
+
+.branch
+    .card
+        box-shadow: 0px 2px 52px $green
+        .card-header
+            background: $green
+            .title
+                h5
+                    color: $white!important
+        .card-body
+            .icon
+                svg
+                    fill: $green
+            p
+                a
+                    color: $dark
+
+.service
+    .title
+        h6
+            color: $green
+        h2
+            color: $blue
+    .card
+        background: $card
+        .link
+            a, svg
+                fill: $green!important
+                color: $green!important
+
+.tabs
+    .title
+        h6
+            color: $green
+        h2
+            color: $blue
+    .link
+        a, svg
+            fill: $green!important
+            color: $green!important
+
+.about
+    .icons
+        .icon
+            background-image: $linear-icon
+            svg
+                fill: $white
+    .content
+        p
+            border-left: 4px solid $green
+        .advantages
+            .item
+                box-shadow: $shadow-color-2
+                &::after
+                    background-image: $linear-advantages
+                    box-shadow: $shadow-color-2
+                .icon
+                    background: $white
+                    svg
+                        fill:  $green
+
+.test-box
+    background-image: $linear-test
+    .title
+        h6, h2
+            color: $white!important
+
+.faq
+    .accordion
+        .accordion-item
+            border: 1px solid $green
+            .accordion-header
+                .accordion-button
+                    &:not(.collapsed)
+                        background: transparent
+
+.request
+    .advantages-item
+        .item
+            .icon
+                background: $light-green
+                svg
+                    fill: $green
+
+form
+    background-color: $green
+    h6, h4
+        color: $white!important
+    input, textarea
+        color: $dark!important
+        &::placeholder
+            color: $dark!important
+    input[type="checkbox"]
+            &:checked
+                background-color: $blue
+    select
+        color: $dark!important
+    label
+        color: $white
+        a
+            color: $white
+    .btn.btn-light
+        color: $green!important
+
+.news
+    .card
+        border: $border-color-1
+        box-shadow: none!important
+        background-color: transparent!important
+        .card-header
+            background-color: transparent!important
+            border-bottom: $border-color-1
+            .date
+                background-image: $linaer-btn
+                p
+                    color: $white
+        .card-body
+            .link
+                p, svg
+                    fill: $green!important
+                    color: $green!important
+
+footer
+    background-color: $blue
+    .navbar-brand
+        h3, h6
+            color: $white!important
+    .slogan-footer
+        p
+            color: $white
+    .social-icon
+        .icon
+            background-color: $light-green
+            svg
+                fill: $green
+    .title
+        h4
+            color: $white!important
+    .footer-menu
+        ul
+            li
+                background: transparent
+                a
+                    color: $white
+                    &:hover
+                        color: $white
+                .time
+                    color: $green!important
+    .copyright
+        border-top: 1px solid $line-footer
+        p
+            color: $white
+            a
+                color: $green
+
+.breadcrumb-box
+    background-image: $linear-test
+    .breadcrumb-item+.breadcrumb-item::before
+        color: $white!important
+    ol
+        li
+            color: $white!important
+            a
+                color: $white
+
+.post-icon
+    .item
+        .icon
+            svg
+                fill: $green
+
+.preloader
+    background: $white
+    .centered
+        background: $white
+        .blob-1, .blob-2
+            background: $green
+        .blob-2
+            background: $green

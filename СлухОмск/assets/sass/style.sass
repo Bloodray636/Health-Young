@@ -1,0 +1,615 @@
+@import "fs.sass"
+@import "color.sass"
+@import "config.sass"
+@import "mixin.sass"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none!important
+
+body
+    overflow-x: hidden
+    @extend %btn
+    @extend %form
+
+.top-contact
+    padding: 14px 0
+    .icon
+        margin-right: 12px
+        @media screen and (max-width: 767px)
+            &
+                margin-right: 0px
+        &.search, &.mail
+            padding-left: 12px
+    svg
+        transition: .3s ease
+        width: 18px
+        height: 18px
+        margin-right: 8px
+    p
+        transition: .3s ease
+    .modal
+        .modal-header
+            padding: 30px 20px 
+
+.dropdown
+    &:hover > .dropdown-menu
+        margin-top: 0px!important
+        display: block
+        margin-top:0px
+        margin-left: 0px!important
+        opacity: 1!important
+        border-radius: 8px
+        border: 1px solid $green!important
+        padding: 12px!important
+    .dropdown-menu
+        display: none
+        transition: .0s ease
+        opacity: 0 !important
+        z-index: 999999
+        transition-delay: 1s
+        .nav-item
+            .dropdown-toggle
+                &::after
+                    margin-bottom: 2px!important
+                    margin-left: 5px!important
+        .dropdown-item
+            margin-bottom: 16px
+    .dropend
+        &:hover > .dropdown-menu
+            display: block
+            margin-top:0px
+            margin-left: 0px!important
+            opacity: 1!important
+            @media screen and (min-width: 919px)
+                &
+                    position: absolute
+                    top: 0
+                    left: 110%
+
+.navbar
+    @extend %btn-phone
+    @extend %form
+    padding: 24px 0!important
+    .line
+        width: 1px
+        height: 45px
+        margin: 0px 45px
+    .navbar-brand
+        img
+            margin-right: 16px
+            width: 70px
+            height: auto
+            @media screen and (max-width: 991px)
+                &
+                    width: 50px
+        h3
+            margin-bottom: 10px
+        h6
+            letter-spacing: 0.8px
+    .navbar-toggler
+        padding: 17px
+        border-radius: $radius
+        box-shadow: none!important
+        @media screen and (max-width: 767px)
+            &
+                padding: 12px 12px!important
+        svg
+            width: 20px
+            height: 20px
+    .navbar-nav
+        @media screen and (max-width: 991px)
+            &
+                margin: 14px 20px
+        .nav-item
+            .nav-link
+                margin: 0px 15px
+                white-space: nowrap
+                @media screen and (max-width: 1199px)
+                    &
+                        margin: 0px 10px
+                @media screen and (max-width: 991px)
+                    &
+                        margin: 14px 0px
+                &.dropdown-toggle
+                    &::after
+                        display: none
+
+.carousel
+    z-index: 1
+    position: relative
+    .linear-slider
+        position: absolute
+        max-height: 760px
+        min-height: 300px
+    &-item
+        img
+            max-height: 760px
+            min-height: 400px
+            object-fit: cover
+        h1
+            margin-bottom: 30px
+        p
+            margin-bottom: 70px
+            max-width: 760px
+            @media screen and (max-width: 1199px)
+                &
+                    margin-bottom: 40px
+            @media screen and (max-width: 767px)
+                &
+                    margin-bottom: 40px
+    @extend %btn-light
+    @extend %btn-dark
+
+.branch
+    z-index: 2
+    position: relative
+    top: -60px
+    @media screen and (max-width: 1199px)
+        &
+            top: -30px
+    @media screen and (max-width: 991px)
+        &
+            top: 0px
+            margin: 100px 0
+    .card
+        margin-bottom: 24px
+        border-radius: 35px
+        .item
+            margin-bottom: 20px
+        .card-header
+            padding: 17px 24px
+            border-radius: 10px 10px 0px 0px
+        .card-body
+            padding: 30px 24px
+            .icon
+                svg
+                    margin-right: 12px
+
+.service
+    .title
+        h6
+            margin-bottom: 10px
+        h2
+            margin-bottom: 50px
+    .card
+        padding: 139px 40px 50px 50px
+        border-radius: 35px
+        margin-bottom: 24px
+        background-repeat: no-repeat
+        background-size: 27% auto
+        @media screen and (max-width: 1199px)
+                &
+                    background-size: 20% auto
+        @media screen and (max-width: 767px)
+                &
+                    background-size: 25% auto
+        @media screen and (max-width: 510px)
+                &
+                    background-size: 150px auto
+                    padding: 200px 40px 50px 50px
+        &.hearing-aid
+            background-image: url(../img/service-1.png)
+            background-position: bottom 81px right 40px
+            @media screen and (max-width: 1199px)
+                &
+                   background-position: bottom 80px right 40px
+            @media screen and (max-width: 767px)
+                &
+                    background-position: bottom 100px right 40px
+            @media screen and (max-width: 510px)
+                &
+                    background-position: center top 40px
+        &.technology
+            background-image: url(../img/service-2.png)
+            background-position: bottom 40px right 40px
+            @media screen and (max-width: 767px)
+                &
+                    background-position: bottom 80px right 40px
+            @media screen and (max-width: 510px)
+                &
+                    background-position: center top 40px
+        &.care-products
+            background-image: url(../img/service-3.png)
+            background-position: bottom 55px right 40px
+            @media screen and (max-width: 767px)
+                &
+                    background-position: bottom 100px right 40px
+            @media screen and (max-width: 510px)
+                &
+                    background-position: center top 40px
+        &.batteries
+            background-image: url(../img/service-4.png)
+            background-size: 24% auto
+            background-position: bottom 37px right 40px
+            @media screen and (max-width: 1199px)
+                &
+                    background-size: 16% auto
+                    background-position: bottom 80px right 40px
+            @media screen and (max-width: 991px)
+                &
+                    background-position: bottom 40px right 40px
+            @media screen and (max-width: 767px)
+                &
+                    background-position: bottom 80px right 60px
+            @media screen and (max-width: 510px)
+                &
+                    background-size: 14% auto
+                    background-position: center top 40px
+        .card-body
+            max-width: 60%
+            @media screen and (max-width: 767px)
+                &
+                    max-width: 70%
+            @media screen and (max-width: 510px)
+                &
+                    max-width: 100%
+            .img-card
+                top: 81px
+                right: 40px
+            h4
+                margin-bottom: 20px
+                white-space: nowrap
+                @media screen and (max-width: 510px)
+                    &
+                        white-space: normal
+            p
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+                overflow: hidden
+                margin-bottom: 20px
+            .link
+                svg
+                    margin: 3px 0px 3px 8px
+                    width: 16px
+                    height: 16px
+
+.tabs
+    @extend %btn-tabs
+    margin-top: 130px
+    .title
+        h6
+            margin-bottom: 10px
+        h2
+            margin-bottom: 50px
+    .list-tabs-btn
+        border-right: 1px solid $line
+        padding-right: 24px
+        @media screen and (max-width: 575px)
+            &
+                border: none!important
+                padding-right: 0px
+    .content
+        .tab-content
+            .tab-pane
+                img
+                    max-height: 356px
+                    @media screen and (max-width: 575px)
+                        &
+                            margin-top: 40px
+                .title
+                    h4
+                        margin-top: 30px
+                        margin-bottom: 20px
+                p
+                    margin-bottom: 30px
+                .link
+                    svg
+                        margin: 3px 0px 3px 8px
+                        width: 16px
+                        height: 16px
+
+.about
+    @extend %btn
+    margin-top: 130px
+    .title
+        h6
+            margin-bottom: 10px
+        h2
+            margin-bottom: 50px
+    .img-items
+        padding: 19px 30px
+        background-image: url(../img/bg-about.png)
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: 83% auto
+        @media screen and (max-width: 991px)
+            &
+                margin-bottom: 40px
+        img
+            max-height: 300px
+            border-radius: 35px
+            margin-bottom: 24px
+        .icons
+            .icon
+                width: 60px
+                height: 60px
+                border-radius: 8px
+                padding: 12px
+                svg
+                    width: 36px
+                    height: 36px
+                &.third
+                    left: 24%
+                    bottom: 3%
+                &.second
+                    border-radius: 16px
+                    width: 90px
+                    height: 90px
+                    padding: 12px 24px
+                    top: 40%
+                    @media screen and (max-width: 575px)
+                        &
+                            top: 38%
+                    @media screen and (max-width: 470px)
+                        &
+                            width: 60px
+                            height: 60px
+                    svg
+                        width: 42px
+                        height: 65px
+                        @media screen and (max-width: 470px)
+                            &
+                                width: 20px
+                                height: 40px
+    .content
+        p
+            padding-left: 20px
+            margin-bottom: 50px
+        .advantages
+            .advantages-box
+                margin-bottom: 40px
+                .item
+                    width: 100px
+                    height: 100px
+                    position: relative
+                    z-index: 1
+                    border-radius: 12px
+                    &::after
+                        position: absolute
+                        top: 0
+                        left: 0
+                        content: ""
+                        width: 100px
+                        height: 100px      
+                        transform: rotate(-80deg)
+                        z-index: -1
+                        border-radius: 12px
+                    .icon
+                        border-radius: 12px
+                        padding: 25px
+                        svg
+                            width: 50px
+                            height: 50px
+                .content
+                    margin-left: 24px
+                    h5
+                        margin-bottom: 10px
+
+.test
+    margin-top: 130px
+    .title
+        h2
+            margin-bottom: 16px
+        @media screen and (max-width: 991px)
+            h6
+                margin-bottom: 40px
+    &-box
+        @extend %btn-light
+        padding: 70px 40px!important
+        border-radius: 20px
+
+.faq
+    margin-top: 130px
+    .title
+        h6
+            margin-bottom: 10px
+        h2
+            margin-bottom: 50px
+    .accordion
+        .accordion-item
+            margin-bottom: 20px
+            border-radius: 35px
+            .accordion-header
+                .accordion-button
+                    padding: 40px 50px 22px 50px
+                    border-radius: 35px!important
+                    &::after
+                        margin-top: -10px
+                    &:focus
+                        box-shadow: none!important
+                    &:not(.collapsed)
+                        box-shadow: none!important
+            .accordion-body
+                padding: 0px 50px 40px 50px
+
+.request
+    margin-top: 130px
+    .title
+        h6
+            margin-bottom: 10px
+        h2
+            margin-bottom: 50px
+        h4
+            margin-bottom: 30px
+    .advantages-item
+        .item
+            margin-bottom: 40px
+            .icon
+                width: 60px
+                height: 60px
+                padding: 15px
+                border-radius: 100px
+                svg
+                    width: 30px
+                    height: 30px
+            .content
+                margin-left: 24px
+                h5
+                    margin-bottom: 10px
+
+.free
+    margin-top: 130px
+    .title
+        @media screen and (max-width: 991px)
+            &
+                margin-top: 40px
+        h6
+            margin-bottom: 10px
+        h2
+            margin-bottom: 50px
+    .img-box
+        img
+            border-radius: 35px
+            object-position: right
+    .content
+        p
+            margin-bottom: 40px
+
+.news
+    margin-top: 130px
+    .title
+        h6
+            margin-bottom: 10px
+        h2
+            margin-bottom: 50px
+    .card
+        border-radius: 35px
+        .card-header
+            padding: 20px
+            .date
+                top: 20px
+                right: 20px
+                padding: 14px 20px
+                border-radius: 0px 24px 0px 24px
+            img
+                max-height: 280px
+                border-radius: 30px
+        .card-body
+            padding: 20px
+            h4
+                margin-bottom: 20px
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                -webkit-box-orient: vertical
+                overflow: hidden
+                height: 58px
+            .link
+                svg
+                    margin: 3px 0px 3px 8px
+                    width: 16px
+                    height: 16px
+footer
+    margin-top: 130px
+    padding-top: 60px
+    .navbar-brand
+        .name
+            margin-left: 16px
+            h3
+                margin-bottom: 10px
+            h6
+                letter-spacing: 0.8px
+    .slogan-footer
+        margin-top: 38px
+        max-width: 424px
+        margin-bottom: 30px
+    .social-icon
+        margin-bottom: 40px
+        .icon
+            width: 50px
+            height: 50px
+            padding: 13px
+            border-radius: 5px
+            margin-right: 6px
+            svg
+                width: 24px
+                height: 24px
+    .title
+        h4
+            margin-bottom: 30px
+    .footer-menu
+        ul
+            li
+                margin-bottom: 24px
+    .copyright
+        padding: 40px 0
+
+//PAGE//
+.breadcrumb-box
+    padding: 65px 0
+
+.post
+    margin-top: 130px
+    .post-icon
+        margin-bottom: 20px
+        .item
+            .icon
+                svg
+                    width: 20px
+                    height: 20px
+                    margin-right: 8px
+                    margin-top: -4px
+    .post-content
+        .post-img
+            img
+                max-height: 600px
+                border-radius: 35px
+                margin-top: 15px
+                margin-bottom: 25px
+        .title
+            h4
+                margin-bottom: 50px
+
+//preloader//
+
+.loaded_hiding .preloader
+    transition: .5s opacity
+    opacity: 0
+
+.loaded .preloader
+    display: none
+
+.preloader
+    width: 100vw
+    height: 100vh
+    .centered
+        width: 400px
+        height: 400px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        filter: blur(10px) contrast(20)
+        .blob-1, .blob-2
+            width: 70px
+            height: 70px
+            position: absolute
+            border-radius: 50%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+        .blob-1
+            left: 20%
+            animation: osc-l 2.5s ease infinite
+        .blob-2
+            left: 80%
+            animation: osc-r 2.5s ease infinite
+        @keyframes osc-l
+            0%
+                left: 20%
+            50%
+                left: 50%
+            100%
+                left: 20%
+        @keyframes osc-r
+            0%
+                left: 80%
+            50%
+                left: 50%
+            100%
+                left: 80%

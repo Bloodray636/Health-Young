@@ -1,0 +1,117 @@
+@import config.sass
+
+@font-face
+    font-family: "Manrope-Light", sans-serif
+    src: url(../fonts/Manrope-Light.ttf)
+
+@font-face
+    font-family: "Manrope-ExtraLight"
+    src: url(../fonts/Manrope-ExtraLight.ttf)
+    
+@font-face
+    font-family: "Manrope-Regular", sans-serif
+    src: url(../fonts/Manrope-Regular.ttf)
+
+@font-face
+    font-family: "Manrope-Medium", sans-serif
+    src: url(../fonts/Manrope-Medium.ttf)
+
+@font-face
+    font-family: "Manrope-SemiBold", sans-serif
+    src: url(../fonts/Manrope-SemiBold.ttf)
+
+@font-face
+    font-family: "Manrope-Bold"
+    src: url(../fonts/Manrope-Bold.ttf)
+
+@font-face
+    font-family: "Manrope-ExtraBold"
+    src: url(../fonts/Manrope-ExtraBold.ttf)
+
+body
+    font-family: $regular!important
+
+h2, h3, h4, h5, h6, a, p, span, label, input, textarea, li, ul, ol, button
+    line-height: normal
+    font-style: normal
+
+h1
+    font-size: clamp(1.875rem, 1.5309rem + 1.966vw, 3.25rem)!important
+    font-family: $extrabold
+
+h2
+    font-size: clamp(1.5rem, 1.2185rem + 1.6086vw, 2.625rem)!important
+    font-family: $extrabold
+
+h3
+    font-size: clamp(1.125rem, 0.9733rem + 0.3165vw, 1.25rem)!important
+    $font-family: $medium
+
+h4
+    font-size: clamp(1.25rem, 0.6428rem + 0.9804vw, 1.5rem)!important
+    font-weight: 600!important
+
+h5
+    font-size: clamp(0.875rem, 0.5714rem + 0.4902vw, 1rem)!important
+    font-family: $semibold
+
+h6
+    font-size: clamp(1rem, 0.6964rem + 0.4902vw, 1.125rem)!important
+
+p
+    font-size: clamp(0.875rem, 0.8437rem + 0.1787vw, 1rem)!important
+
+button, a
+    font-size: clamp(0.875rem, 0.8369rem + 0.2176vw, 1rem)!important
+
+label
+    font-size: clamp(0.875rem, 0.5714rem + 0.4902vw, 1rem)!important
+    font-family: $semibold
+    font-weight: 600
+    letter-spacing: 0.96px
+
+.reviews
+    .owl-carousel
+        .thumbnail
+            .card
+                .title
+                    h5
+                        font-size: clamp(1rem, 0.6964rem + 0.4902vw, 1.125rem)!important
+                        font-family: $semibold
+                        font-weight: 600
+                    p
+                        font-size: clamp(0.75rem, 0.4464rem + 0.4902vw, 0.875rem)!important
+
+.contact
+    .text
+        p
+            letter-spacing: 0.96px
+    .item
+        .text
+            p
+                font-size: clamp(0.75rem, 0.4464rem + 0.4902vw, 0.875rem)!important
+                &:nth-child(2)
+                    font-family: $bold
+                    overflow-wrap: anywhere
+                    
+
+.form-check
+    label
+        font-weight: normal!important
+
+.top-contact
+    p
+        font-size: clamp(0.75rem, 0.5983rem + 0.3165vw, 0.875rem)!important
+
+.navbar
+    .nav-link, .dropdown-item
+        font-size: clamp(1rem, 0.6964rem + 0.4902vw, 1.125rem)!important
+
+.about
+    .text
+        p
+            letter-spacing: 0.96px
+
+.date
+    p
+        font-size: clamp(0.875rem, 0.7233rem + 0.3165vw, 1rem)!important

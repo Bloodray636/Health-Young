@@ -1,0 +1,390 @@
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Главная</title>
+          <!--Animate-->
+          <link rel="stylesheet" href="assets/css/animate.min.css"/>
+          <!--CSS-->
+          <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+          <!--Bootstrap CSS-->
+          <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+          <!--Owl Slider CSS-->
+          <link href="assets/owl-carousel/css/owl.carousel.min.css">
+          <link href="assets/owl-carousel/css/owl.theme.default.min.css">
+      </head>
+      <body>
+        <header>
+          <div class="top-contact">
+            <div class="container">
+              <div class="row">
+                <div class="item d-flex align-items-center">
+                  <div class="icon eye">
+                    <a href="#" class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11" fill="none">
+                        <g clip-path="url(#clip0_142_4)">
+                          <path d="M9 0C5.56091 0 2.44216 1.92896 0.140841 5.06211C-0.0469469 5.31881 -0.0469469 5.67742 0.140841 5.93411C2.44216 9.07104 5.56091 11 9 11C12.4391 11 15.5578 9.07104 17.8592 5.93789C18.0469 5.68119 18.0469 5.32258 17.8592 5.06589C15.5578 1.92896 12.4391 0 9 0ZM9.2467 9.37303C6.96379 9.52025 5.07855 7.59128 5.22215 5.24708C5.33998 3.31434 6.86806 1.74777 8.7533 1.62697C11.0362 1.47975 12.9214 3.40872 12.7778 5.75292C12.6563 7.68188 11.1283 9.24846 9.2467 9.37303ZM9.13256 7.58373C7.90273 7.66301 6.88647 6.62491 6.96747 5.3641C7.03007 4.32224 7.85486 3.48044 8.87113 3.41249C10.101 3.33322 11.1172 4.37131 11.0362 5.63212C10.9699 6.67776 10.1451 7.51956 9.13256 7.58373Z" fill="url(#paint0_linear_142_4)"/>
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_142_4" x1="9" y1="0" x2="9" y2="11" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <clipPath id="clip0_142_4">
+                            <rect width="18" height="11"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-0 d-lg-block d-none">Версия для слабовидящих</p>
+                    </a>
+                  </div>
+                  <div class="icon search">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal" class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_144_20)">
+                          <path d="M0 6.54545C0 2.9305 2.9305 0 6.54545 0C10.1604 0 13.0909 2.9305 13.0909 6.54545C13.0909 10.1604 10.1604 13.0909 6.54545 13.0909C2.9305 13.0909 0 10.1604 0 6.54545Z" fill="url(#paint0_linear_144_20)"/>
+                          <path d="M12.6521 11.8108C12.4197 11.5784 12.043 11.5784 11.8106 11.8108C11.5783 12.0431 11.5783 12.4199 11.8106 12.6522L14.9842 15.8258C15.2166 16.0582 15.5933 16.0582 15.8257 15.8258C16.0581 15.5934 16.0581 15.2167 15.8257 14.9843L12.6521 11.8108Z" fill="url(#paint1_linear_144_20)"/>
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_144_20" x1="6.54545" y1="0" x2="6.54545" y2="13.0909" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <linearGradient id="paint1_linear_144_20" x1="13.8182" y1="11.6365" x2="13.8182" y2="16.0001" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <clipPath id="clip0_144_20">
+                            <rect width="16" height="16"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-0 d-lg-block d-none">Поиск по сайту</p>
+                    </a>
+                    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-body p-0">
+                            <form role="search">
+                              <div class="title d-flex align-items-center justify-content-between mb-5">
+                                <h4 class="mb-0">Поиск</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <input class="form-control me-2" type="search" placeholder="Поиск..." aria-label="Поиск">
+                              <div class="btn-block">
+                                <button class="btn mt-0 btn-light w-100">Искать</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon ms-auto">
+                    <a href="mailto:healthyoung@mail.ru" class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_130_205)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88556 0.511172C2.06055 0.336452 2.27066 0.200915 2.50199 0.113542C2.73331 0.0261698 2.98058 -0.011043 3.22737 0.00436993C3.47416 0.0197829 3.71487 0.0874697 3.93352 0.202945C4.15218 0.318419 4.3438 0.479046 4.49569 0.67418L6.29078 2.9803C6.61979 3.40332 6.7358 3.95434 6.60579 4.47437L6.05876 6.66447C6.03048 6.77791 6.03201 6.89673 6.06321 7.0094C6.0944 7.12207 6.15418 7.22476 6.23677 7.30751L8.69389 9.76463C8.77674 9.84738 8.87959 9.90727 8.99246 9.93846C9.10532 9.96967 9.22434 9.9711 9.33792 9.94263L11.5271 9.39561C11.7837 9.33144 12.0515 9.32646 12.3104 9.38103C12.5692 9.4356 12.8122 9.5483 13.0211 9.71062L15.3272 11.5047C16.1563 12.1497 16.2323 13.3748 15.4903 14.1158L14.4562 15.1498C13.7162 15.8899 12.6101 16.2149 11.5791 15.8519C8.94009 14.9234 6.54406 13.4127 4.56869 11.4317C2.58789 9.45662 1.07713 7.06095 0.148478 4.42237C-0.213539 3.39232 0.111476 2.28526 0.851512 1.54523L1.88556 0.511172Z" fill="url(#paint0_linear_130_205)"/>
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_130_205" x1="8.00066" y1="0.000976563" x2="8.00066" y2="16.001" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <clipPath id="clip0_130_205">
+                            <rect width="16" height="16" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-0 d-lg-block d-none">+123 456 7899 90</p>
+                    </a>
+                  </div>
+                  <div class="icon mail">
+                    <a href="mailto:zvukomsk@yandex.ru" class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
+                        <g clip-path="url(#clip0_135_12)">
+                          <path d="M16 0.551161C15.7679 0.219309 15.3776 0 14.9371 0H1.04641C0.615187 0 0.233879 0.211521 0 0.531817L8.01724 7.05882L16 0.551161Z" fill="url(#paint0_linear_135_12)"/>
+                          <path d="M0 1.88232V10.9995C0 11.6792 0.562606 12.2353 1.25023 12.2353H14.7498C15.4374 12.2353 16 11.6792 16 10.9995V1.9152L8.02475 8.4966L0 1.88232Z" fill="url(#paint1_linear_135_12)"/>
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_135_12" x1="8" y1="0" x2="8" y2="7.05882" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <linearGradient id="paint1_linear_135_12" x1="8" y1="1.88232" x2="8" y2="12.2353" gradientUnits="userSpaceOnUse">
+                            <stop/>
+                            <stop offset="1"/>
+                          </linearGradient>
+                          <clipPath id="clip0_135_12">
+                            <rect width="16" height="12.2353" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p class="mb-0 d-lg-block d-none">zvukomsk@yandex.ru</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="d-flex align-items-center" href="#">
+                  <img src="assets/img/logo.png" alt="logo">
+                  <div class="name">
+                    <h3>Лаборатория</h3>
+                    <h6 class="mb-0">слуха и протезирования</h6>
+                  </div>
+                </a>
+              </div>
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24">
+                  <path d="M20 5.25H2a.75.75 0 0 1 0-1.5h18a.75.75 0 0 1 0 1.5zm2 5H2a.75.75 0 0 1 0-1.5h20a.75.75 0 0 1 0 1.5zm-2 5H2a.75.75 0 0 1 0-1.5h18a.75.75 0 0 1 0 1.5zm2 5H2a.75.75 0 0 1 0-1.5h20a.75.75 0 0 1 0 1.5z" data-name="Layer 2"/>
+                </svg>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasNavbarLabel" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close ms-auto shadow-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link p-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Слуховые аппараты
+                    </a>
+                    <ul class="dropdown-menu border-0 p-0">
+                      <li><a class="dropdown-item p-0" href="#">Action</a></li>
+                      <li><a class="dropdown-item p-0" href="#">Another action</a></li>
+                      <li><a class="dropdown-item p-0 mb-0" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="#">Акции</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="#">О компании</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="#">Тест слуха</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 me-lg-3 me-0" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-block">
+                <button class="btn d-flex align-items-center">
+                  <div class="icon d-xl-block d-lg-block d-md-none d-sm-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <g clip-path="url(#clip0_149_9)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.88556 0.511172C2.06055 0.336452 2.27066 0.200915 2.50199 0.113542C2.73331 0.0261698 2.98058 -0.011043 3.22737 0.00436993C3.47416 0.0197829 3.71487 0.0874697 3.93352 0.202945C4.15218 0.318419 4.3438 0.479046 4.49569 0.67418L6.29078 2.9803C6.61979 3.40332 6.7358 3.95434 6.60579 4.47437L6.05876 6.66447C6.03048 6.77791 6.03201 6.89673 6.06321 7.0094C6.0944 7.12207 6.15418 7.22476 6.23677 7.30751L8.69389 9.76463C8.77674 9.84738 8.87959 9.90727 8.99246 9.93846C9.10532 9.96967 9.22434 9.9711 9.33792 9.94263L11.5271 9.39561C11.7837 9.33144 12.0515 9.32646 12.3104 9.38103C12.5692 9.4356 12.8122 9.5483 13.0211 9.71062L15.3272 11.5047C16.1563 12.1497 16.2323 13.3748 15.4903 14.1158L14.4562 15.1498C13.7162 15.8899 12.6101 16.2149 11.5791 15.8519C8.94009 14.9234 6.54406 13.4127 4.56869 11.4317C2.58789 9.45662 1.07713 7.06095 0.148478 4.42237C-0.213539 3.39232 0.111476 2.28526 0.851512 1.54523L1.88556 0.511172Z"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_149_9">
+                          <rect width="16" height="16"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <span class="d-md-block d-none">Заказать звонок</span>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          <div class="breadcrumb-box">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="container">
+              <div class="row">
+                <div class="post-content">
+                  <div class="post-img">
+                    <img class="w-100 h-100 object-fit-cover" src="assets/img/slider.jpg" alt="Post">
+                  </div>
+                  <div class="post-icon">
+                    <div class="item d-flex align-items-center">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                          <g clip-path="url(#clip0_21_19)">
+                            <path d="M7 0.875C7 0.642936 6.90781 0.420376 6.74372 0.256282C6.57962 0.0921872 6.35706 0 6.125 0C5.89294 0 5.67038 0.0921872 5.50628 0.256282C5.34219 0.420376 5.25 0.642936 5.25 0.875V1.75H3.5C2.57174 1.75 1.6815 2.11875 1.02513 2.77513C0.368749 3.4315 0 4.32174 0 5.25L0 7H28V5.25C28 4.32174 27.6313 3.4315 26.9749 2.77513C26.3185 2.11875 25.4283 1.75 24.5 1.75H22.75V0.875C22.75 0.642936 22.6578 0.420376 22.4937 0.256282C22.3296 0.0921872 22.1071 0 21.875 0C21.6429 0 21.4204 0.0921872 21.2563 0.256282C21.0922 0.420376 21 0.642936 21 0.875V1.75H7V0.875ZM28 24.5V8.75H0V24.5C0 25.4283 0.368749 26.3185 1.02513 26.9749C1.6815 27.6313 2.57174 28 3.5 28H24.5C25.4283 28 26.3185 27.6313 26.9749 26.9749C27.6313 26.3185 28 25.4283 28 24.5ZM16.625 12.25H18.375C18.6071 12.25 18.8296 12.3422 18.9937 12.5063C19.1578 12.6704 19.25 12.8929 19.25 13.125V14.875C19.25 15.1071 19.1578 15.3296 18.9937 15.4937C18.8296 15.6578 18.6071 15.75 18.375 15.75H16.625C16.3929 15.75 16.1704 15.6578 16.0063 15.4937C15.8422 15.3296 15.75 15.1071 15.75 14.875V13.125C15.75 12.8929 15.8422 12.6704 16.0063 12.5063C16.1704 12.3422 16.3929 12.25 16.625 12.25ZM21.875 12.25H23.625C23.8571 12.25 24.0796 12.3422 24.2437 12.5063C24.4078 12.6704 24.5 12.8929 24.5 13.125V14.875C24.5 15.1071 24.4078 15.3296 24.2437 15.4937C24.0796 15.6578 23.8571 15.75 23.625 15.75H21.875C21.6429 15.75 21.4204 15.6578 21.2563 15.4937C21.0922 15.3296 21 15.1071 21 14.875V13.125C21 12.8929 21.0922 12.6704 21.2563 12.5063C21.4204 12.3422 21.6429 12.25 21.875 12.25ZM3.5 18.375C3.5 18.1429 3.59219 17.9204 3.75628 17.7563C3.92038 17.5922 4.14294 17.5 4.375 17.5H6.125C6.35706 17.5 6.57962 17.5922 6.74372 17.7563C6.90781 17.9204 7 18.1429 7 18.375V20.125C7 20.3571 6.90781 20.5796 6.74372 20.7437C6.57962 20.9078 6.35706 21 6.125 21H4.375C4.14294 21 3.92038 20.9078 3.75628 20.7437C3.59219 20.5796 3.5 20.3571 3.5 20.125V18.375ZM9.625 17.5H11.375C11.6071 17.5 11.8296 17.5922 11.9937 17.7563C12.1578 17.9204 12.25 18.1429 12.25 18.375V20.125C12.25 20.3571 12.1578 20.5796 11.9937 20.7437C11.8296 20.9078 11.6071 21 11.375 21H9.625C9.39294 21 9.17038 20.9078 9.00628 20.7437C8.84219 20.5796 8.75 20.3571 8.75 20.125V18.375C8.75 18.1429 8.84219 17.9204 9.00628 17.7563C9.17038 17.5922 9.39294 17.5 9.625 17.5Z" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_21_19">
+                              <rect width="28" height="28" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <p class="mb-0">16 Января, 2024</p>
+                    </div>
+                  </div>
+                  <div class="title">
+                    <h4>Вирусные инфекции и потеря слуха</h4>
+                  </div>
+                  <p>Существует распространенное заблуждение, что потеря слуха возникает только в результате воздействия громкого ударного шума, из-за возрастных изменений или врождённого порока развития. Однако это не всегда так. Часто тугоухость развивается под действием инфекции и вирусов, которые негативно влияют на внутреннее ухо, в том числе улитку.
+                    <br><br>
+                    Универсального способа, позволяющего избежать потери слуха, не существует, однако бдительность и распознавание симптомов вирусов на раннем этапе поможет предотвратить их дальнейшее развитие. Также необходима надлежащая диагностика и лечение, поэтому желательно знать, какие типы вирусов приводят к потере слуха в первую очередь..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-12">
+                <div class="navbar-brand">
+                  <a href="#">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/img/logo.png" alt="logo">
+                      <div class="name">
+                        <h3>Лаборатория</h3>
+                        <h6 class="mb-0">слуха и протезирования</h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="slogan-footer">
+                  <p>Мы стремимся создать комфортное и доверительное окружение, где вы сможете получить профессиональную помощь и поддержку.</p>
+                </div>
+                <div class="social-icon">
+                  <div class="item mb-0 d-flex align-items-center">
+                    <a href="#" target="_blank">
+                      <div class="icon d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                          <g clip-path="url(#clip0_159_307)">
+                            <path d="M16.5387 0.175353L0.591585 6.47016C-0.0501506 6.76328 -0.267208 7.35035 0.436449 7.66893L4.52762 8.99976L14.4194 2.74208C14.9595 2.34922 15.5125 2.45398 15.0367 2.88612L6.54093 10.7601L6.27405 14.0923C6.52125 14.6068 6.97385 14.6092 7.26255 14.3535L9.61303 12.0769L13.6386 15.1625C14.5736 15.7291 15.0823 15.3635 15.2835 14.325L17.9239 1.52713C18.198 0.248818 17.7305 -0.314406 16.5387 0.175353Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_159_307">
+                              <rect width="18" height="15.4286"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="#" target="_blank">
+                      <div class="icon d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path d="M1.26525 1.26525C0 2.5305 0 4.56714 0 8.64V9.36C0 13.4329 0 15.4695 1.26525 16.7347C2.5305 18 4.56714 18 8.64 18H9.36C13.4329 18 15.4695 18 16.7347 16.7347C18 15.4695 18 13.4329 18 9.36V8.64C18 4.56714 18 2.5305 16.7347 1.26525C15.4695 0 13.4329 0 9.36 0H8.64C4.56714 0 2.5305 0 1.26525 1.26525ZM3.0375 5.47501H5.09251C5.16001 8.91 6.67499 10.365 7.875 10.665V5.47501H9.81V8.4375C10.995 8.31001 12.24 6.96001 12.66 5.47501H14.595C14.4367 6.24516 14.1212 6.97432 13.6682 7.61701C13.2153 8.25967 12.6346 8.80196 11.9625 9.21001C12.7129 9.58255 13.3757 10.1101 13.9071 10.7579C14.4384 11.4056 14.8263 12.1588 15.045 12.9675H12.915C12.7187 12.265 12.3193 11.6361 11.7669 11.1598C11.2145 10.6834 10.5337 10.3809 9.81 10.29V12.9675H9.57749C5.47501 12.9675 3.135 10.155 3.0375 5.47501Z"/>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="#" target="_blank">
+                      <div class="icon d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
+                          <g clip-path="url(#clip0_159_314)">
+                            <path d="M5.31827 2.7225C6.40039 2.7225 7.28043 3.58518 7.28043 4.64595C7.28043 5.7057 6.40039 6.56858 5.31827 6.56858C4.23718 6.56858 3.3561 5.7057 3.3561 4.64595C3.3561 3.58518 4.23718 2.7225 5.31827 2.7225ZM5.31827 9.29006C7.93229 9.29006 10.0572 7.20707 10.0572 4.64595C10.0572 2.08381 7.93229 0 5.31827 0C2.70487 0 0.579322 2.08381 0.579322 4.64595C0.579322 7.20697 2.70487 9.29006 5.31827 9.29006ZM7.23557 13.0798C8.20032 12.8643 9.13075 12.4902 9.98752 11.9625C10.6359 11.5618 10.8315 10.7215 10.4228 10.0857C10.0146 9.44859 9.15787 9.25702 8.50831 9.65763C6.56722 10.8545 4.06785 10.854 2.12781 9.65763C1.47814 9.25702 0.621471 9.44869 0.213744 10.0857C-0.194923 10.722 -3.14912e-05 11.5618 0.648597 11.9625C1.50526 12.4896 2.43569 12.8643 3.40045 13.0798L0.750947 15.6769C0.209258 16.2084 0.209257 17.07 0.751468 17.6014C1.02283 17.8669 1.37788 17.9999 1.73281 17.9999C2.08837 17.9999 2.44393 17.867 2.7153 17.6014L5.31764 15.0493L7.92228 17.6014C8.46397 18.1329 9.34285 18.1329 9.88496 17.6014C10.4277 17.07 10.4277 16.2078 9.88496 15.6769L7.23557 13.0798Z"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_159_314">
+                              <rect width="10.6364" height="18"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="title">
+                  <h4>Меню</h4>
+                </div>
+                <div class="footer-menu">
+                  <ul class="list-group border-0 list-group-flush">
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">Слуховые аппараты</a>
+                    </li>
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">Акции</a>
+                    </li>
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">О компании</a>
+                    </li>
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">Тест слуха</a>
+                    </li>
+                    <li class="list-group-item p-0 border-0">
+                      <a href="#" class="nav-link d-inline">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="title">
+                  <h4>Время работы</h4>
+                </div>
+                <div class="footer-menu">
+                  <ul class="list-group border-0 list-group-flush">
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Понедельник</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Вторник</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Среда</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Четверг</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Пятница</a>
+                      <a class="nav-link d-inline time">09:00 - 20:00</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Суббота</a>
+                      <a class="nav-link d-inline time">Выходной</a>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between list-group-item p-0 border-0">
+                      <a class="nav-link d-inline">Воскресенье</a>
+                      <a class="nav-link d-inline time">Выходной</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="copyright">
+                  <p class="mb-0 text-center">Copyright © 2024. Все права защищены. Разработка и поддержка: <a href="https://sibsr.ru/" target="_blank">ООО «СибСР»</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </body>
+        <!--JQuery link-->
+        <script src="assets/jquery/jquery.js"></script>
+        <!--JS-->
+        <script src="assets/owl-carousel/script/owl.carousel.min.js"></script>
+        <!--Bootstrap JS-->
+        <script src="assets/bootstrap/script/bootstrap.bundle.min.js"></script>
+        <!--JS-->
+        <script src="assets/script/script.js"></script>
+        <!--wow.js-->
+        <script src="assets/wow/wow.min.js"></script>
+        <script>
+          new WOW().init();
+          </script>
+  </html>
